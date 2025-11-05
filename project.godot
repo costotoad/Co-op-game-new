@@ -29,7 +29,6 @@ project/assembly_name="Multiplayer Project"
 
 folder_colors={
 "res://Assets/": "blue",
-"res://Documentation/": "gray",
 "res://Scenes/": "red",
 "res://Scripts/": "yellow"
 }
