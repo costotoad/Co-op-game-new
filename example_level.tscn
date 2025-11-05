@@ -19,7 +19,8 @@ scale = Vector2(2, 2)
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="." index="3"]
 position = Vector2(1, -242)
-energy = 0.0
+energy = 1.07
+shadow_enabled = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="DirectionalLight2D" index="0"]
 color = Color(0.0646965, 0.0646965, 0.0646965, 1)
