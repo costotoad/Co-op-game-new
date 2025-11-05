@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://wab6noht700v"]
+
+[ext_resource type="Texture2D" uid="uid://c7udajbhgob3r" path="res://Assets/werewolf-removebg-preview.png" id="1_13kvk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujj7y"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(0, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4rgr"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(48, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xru36"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(96, 0, 48, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kjdip"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujj7y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4rgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xru36")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Wolf-walk-up" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kjdip")

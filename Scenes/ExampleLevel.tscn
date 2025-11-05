@@ -7,5 +7,5 @@
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
 
-[node name="ExamplePlayer" parent="." instance=ExtResource("1_g6ypt")]
+[node name="werewolf" parent="." instance=ExtResource("1_g6ypt")]
 position = Vector2(-13, 19)
