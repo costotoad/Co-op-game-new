@@ -1,6 +1,43 @@
-[gd_scene load_steps=6 format=3 uid="uid://wab6noht700v"]
+[gd_scene load_steps=17 format=3 uid="uid://wab6noht700v"]
 
 [ext_resource type="Texture2D" uid="uid://c7udajbhgob3r" path="res://Assets/werewolf-removebg-preview.png" id="1_13kvk"]
+[ext_resource type="Script" uid="uid://pnclki5a75ed" path="res://WolfWalkUp.cs" id="1_ujj7y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13kvk"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(0, 128, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjdip"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(48, 128, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13ikg"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(96, 128, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ducfc"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(0, 192, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5con"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(48, 192, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lw0lr"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(96, 192, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nb70a"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(0, 64, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kf0o6"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(48, 64, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfp6g"]
+atlas = ExtResource("1_13kvk")
+region = Rect2(96, 64, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ujj7y"]
 atlas = ExtResource("1_13kvk")
@@ -18,6 +55,48 @@ region = Rect2(96, 0, 48, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_13kvk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kjdip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_13ikg")
+}],
+"loop": true,
+"name": &"wof-walk-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ducfc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h5con")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lw0lr")
+}],
+"loop": true,
+"name": &"wolf-walk-left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nb70a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kf0o6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfp6g")
+}],
+"loop": true,
+"name": &"wolf-walk-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_ujj7y")
 }, {
 "duration": 1.0,
@@ -27,11 +106,23 @@ animations = [{
 "texture": SubResource("AtlasTexture_xru36")
 }],
 "loop": true,
-"name": &"default",
-"speed": 5.0
+"name": &"wolf-walk-up",
+"speed": 8.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s4rgr"]
+radius = 13.0
+height = 44.0
+
 [node name="Wolf-walk-up" type="CharacterBody2D"]
+position = Vector2(144, 88)
+script = ExtResource("1_ujj7y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-80, -54)
 sprite_frames = SubResource("SpriteFrames_kjdip")
+animation = &"wof-walk-down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-80, -46)
+shape = SubResource("CapsuleShape2D_s4rgr")
