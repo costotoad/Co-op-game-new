@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://ck4jcrl8ld2xe"]
+[gd_scene load_steps=4 format=3 uid="uid://ck4jcrl8ld2xe"]
 
 [ext_resource type="PackedScene" uid="uid://cgoctc7myuy0e" path="res://Scenes/ExampleLevel.tscn" id="1_ah8gq"]
-[ext_resource type="Texture2D" uid="uid://djfswf65nn2kr" path="res://Assets/grass place holder.png" id="2_y5x4s"]
+[ext_resource type="Texture2D" uid="uid://kc61eyvu2du2" path="res://Assets/grass place holder.png" id="2_y5x4s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ah8gq"]
+size = Vector2(148.317, 441.767)
 
 [node name="ExampleLevel" instance=ExtResource("1_ah8gq")]
 
@@ -16,6 +19,7 @@ zoom = Vector2(1, 1)
 [node name="ExamplePlayer" parent="." index="2"]
 position = Vector2(0, -11)
 scale = Vector2(2, 2)
+collision_layer = 2
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="." index="3"]
 position = Vector2(1, -242)
@@ -24,3 +28,31 @@ shadow_enabled = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="DirectionalLight2D" index="0"]
 color = Color(0.0646965, 0.0646965, 0.0646965, 1)
+
+[node name="Area2D" type="Area2D" parent="." index="4"]
+disable_mode = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(-2443, -101)
+scale = Vector2(19.5854, 4.70044)
+shape = SubResource("RectangleShape2D_ah8gq")
+one_way_collision_margin = 0.0
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D" index="1"]
+position = Vector2(-14, 1563)
+scale = Vector2(19.5854, 4.70044)
+shape = SubResource("RectangleShape2D_ah8gq")
+one_way_collision_margin = 0.0
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" index="2"]
+position = Vector2(2411, -63.9998)
+scale = Vector2(19.5854, 4.70044)
+shape = SubResource("RectangleShape2D_ah8gq")
+one_way_collision_margin = 0.0
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" index="3"]
+position = Vector2(-9, -1591)
+scale = Vector2(19.5854, 4.70044)
+shape = SubResource("RectangleShape2D_ah8gq")
+one_way_collision_margin = 0.0
