@@ -1,54 +1,54 @@
 [gd_scene load_steps=17 format=3 uid="uid://wab6noht700v"]
 
-[ext_resource type="Texture2D" uid="uid://c7udajbhgob3r" path="res://Assets/werewolf-removebg-preview.png" id="1_13kvk"]
-[ext_resource type="Script" uid="uid://pnclki5a75ed" path="res://WolfWalkUp.cs" id="1_ujj7y"]
+[ext_resource type="Script" uid="uid://pnclki5a75ed" path="res://WolfWalk.cs" id="1_55onw"]
+[ext_resource type="Texture2D" uid="uid://c7udajbhgob3r" path="res://Assets/werewolf-removebg-preview.png" id="2_en2fo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_13kvk"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(0, 128, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kjdip"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(48, 128, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_13ikg"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(96, 128, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ducfc"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(0, 192, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h5con"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(48, 192, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lw0lr"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(96, 192, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nb70a"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(0, 64, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kf0o6"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(48, 64, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wfp6g"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(96, 64, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ujj7y"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(0, 0, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s4rgr"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(48, 0, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xru36"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("2_en2fo")
 region = Rect2(96, 0, 48, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kjdip"]
@@ -114,9 +114,9 @@ animations = [{
 radius = 13.0
 height = 44.0
 
-[node name="Wolf-walk-up" type="CharacterBody2D"]
+[node name="Wolf" type="CharacterBody2D"]
 position = Vector2(144, 88)
-script = ExtResource("1_ujj7y")
+script = ExtResource("1_55onw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-80, -54)
