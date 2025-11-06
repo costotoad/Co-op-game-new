@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://wab6noht700v"]
+[gd_scene load_steps=17 format=3 uid="uid://80wnpyaba2qn"]
 
 [ext_resource type="Script" uid="uid://pnclki5a75ed" path="res://WolfWalk.cs" id="1_55onw"]
 [ext_resource type="Texture2D" uid="uid://c7udajbhgob3r" path="res://Assets/werewolf-removebg-preview.png" id="2_en2fo"]
