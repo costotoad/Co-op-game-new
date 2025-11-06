@@ -26,9 +26,9 @@ position = Vector2(0, -11)
 scale = Vector2(2, 2)
 
 [node name="PointLight2D" type="PointLight2D" parent="ExamplePlayer" index="2"]
-position = Vector2(18, 3)
-rotation = -1.58253
-scale = Vector2(0.103719, 0.231462)
+position = Vector2(77, 5)
+rotation = -1.5708
+scale = Vector2(0.47375, 1.28221)
 energy = 6.0
 texture = ExtResource("3_y5x4s")
 texture_scale = 0.52
