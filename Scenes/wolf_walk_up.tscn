@@ -1,17 +1,17 @@
 [gd_scene load_steps=6 format=3 uid="uid://wab6noht700v"]
 
-[ext_resource type="Texture2D" uid="uid://c7udajbhgob3r" path="res://Assets/werewolf-removebg-preview.png" id="1_13kvk"]
+[ext_resource type="Texture2D" uid="uid://dthyy8cpranc0" path="res://Assets/werewolf-removebg-preview.png" id="1_3rqde"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ujj7y"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("1_3rqde")
 region = Rect2(0, 0, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s4rgr"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("1_3rqde")
 region = Rect2(48, 0, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xru36"]
-atlas = ExtResource("1_13kvk")
+atlas = ExtResource("1_3rqde")
 region = Rect2(96, 0, 48, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kjdip"]
