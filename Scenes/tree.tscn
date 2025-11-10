@@ -2,20 +2,20 @@
 
 [ext_resource type="Texture2D" uid="uid://uf0n8woye0ex" path="res://Assets/freenature.png/freenature.png" id="1_jndjd"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_brfkd"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vwjc"]
 atlas = ExtResource("1_jndjd")
 region = Rect2(85, 256, 85, 128)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_nnvrw"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_rsuno"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_brfkd")
+"texture": SubResource("AtlasTexture_0vwjc")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
-[node name="Node2D" type="AnimatedSprite2D"]
-sprite_frames = SubResource("SpriteFrames_nnvrw")
+[node name="tree" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_rsuno")
