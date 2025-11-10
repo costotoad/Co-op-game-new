@@ -110,173 +110,173 @@ position = Vector2(861, -57)
 [node name="bush_orange6" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
 position = Vector2(743, -68)
 
-[node name="Snow_Tree" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
-position = Vector2(-836, 432)
-
-[node name="Node2D" parent="." instance=ExtResource("6_344ge")]
+[node name="Node2D" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(-826, -437)
 
-[node name="Node2D2" parent="." instance=ExtResource("6_344ge")]
+[node name="Node2D2" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(-613, -455)
 
-[node name="Node2D3" parent="." instance=ExtResource("6_344ge")]
+[node name="Node2D3" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(-741, -306)
 
-[node name="Node2D4" parent="." instance=ExtResource("6_344ge")]
+[node name="Node2D4" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(-479, -338)
 
-[node name="Node2D5" parent="." instance=ExtResource("6_344ge")]
+[node name="Node2D5" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(-338, -487)
 
-[node name="Node2D6" parent="." instance=ExtResource("6_344ge")]
+[node name="Node2D6" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(-890, -204)
 
-[node name="Node2D7" parent="." instance=ExtResource("6_344ge")]
+[node name="Node2D7" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(-199, -300)
 
-[node name="Node2D8" parent="." instance=ExtResource("6_344ge")]
-position = Vector2(-149, -458)
-
-[node name="Node2D9" parent="." instance=ExtResource("6_344ge")]
+[node name="Node2D9" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(235, -326)
 
-[node name="Node2D10" parent="." instance=ExtResource("6_344ge")]
+[node name="Node2D8" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+position = Vector2(-149, -458)
+
+[node name="Node2D10" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(848, -378)
 
-[node name="Node2D11" parent="." instance=ExtResource("6_344ge")]
+[node name="Node2D11" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(483, -480)
 
-[node name="bush_orange" parent="." instance=ExtResource("5_21xkr")]
+[node name="bush_orange7" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
 position = Vector2(750, 97)
 
-[node name="bush_orange2" parent="." instance=ExtResource("5_21xkr")]
+[node name="bush_orange8" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
 position = Vector2(759, 79)
 
-[node name="pine_tree" parent="." instance=ExtResource("7_ynf5e")]
+[node name="pine_tree" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(-719, -51)
 
-[node name="pine_tree2" parent="." instance=ExtResource("7_ynf5e")]
+[node name="pine_tree2" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(-540, -23)
 
-[node name="pine_tree3" parent="." instance=ExtResource("7_ynf5e")]
+[node name="pine_tree3" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(-418, -60)
 
-[node name="pine_tree4" parent="." instance=ExtResource("7_ynf5e")]
+[node name="pine_tree4" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(838, 218)
 
-[node name="pine_tree5" parent="." instance=ExtResource("7_ynf5e")]
-position = Vector2(380, 219)
-
-[node name="pine_tree6" parent="." instance=ExtResource("7_ynf5e")]
+[node name="pine_tree6" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(588, 202)
 
-[node name="pine_tree7" parent="." instance=ExtResource("7_ynf5e")]
+[node name="pine_tree7" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(436, 408)
 
-[node name="pine_tree8" parent="." instance=ExtResource("7_ynf5e")]
+[node name="pine_tree8" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(831, 413)
 
-[node name="pine_tree9" parent="." instance=ExtResource("7_ynf5e")]
+[node name="pine_tree9" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(478, 61)
 
-[node name="pine_tree10" parent="." instance=ExtResource("7_ynf5e")]
+[node name="pine_tree5" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(380, 219)
+
+[node name="pine_tree10" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(619, 413)
 
-[node name="pine_tree11" parent="." instance=ExtResource("7_ynf5e")]
+[node name="pine_tree11" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(706, 238)
 
-[node name="pine_tree12" parent="." instance=ExtResource("7_ynf5e")]
+[node name="pine_tree12" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(495, 257)
 
-[node name="redwood" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(-226, 122)
 
-[node name="redwood2" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood2" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(-295, 319)
 
-[node name="redwood3" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood3" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(-130, 274)
 
-[node name="redwood4" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood4" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(-59, 146)
 
-[node name="redwood5" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood5" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(-40, 285)
 
-[node name="redwood6" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood6" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(151, 139)
 
-[node name="redwood7" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood7" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(55, 88)
 
-[node name="redwood8" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood8" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(239, 392)
 
-[node name="redwood9" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood9" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(82, 377)
 
-[node name="redwood10" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood10" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(192, 249)
 
-[node name="redwood11" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood11" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(85, 246)
 
-[node name="redwood12" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood12" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(-226, 448)
 
-[node name="redwood13" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood13" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(-104, 467)
 
-[node name="redwood14" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood14" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(150, 464)
 
-[node name="redwood15" parent="." instance=ExtResource("8_hptm8")]
+[node name="redwood15" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
 position = Vector2(-11, 463)
 
-[node name="Bush" parent="." instance=ExtResource("4_6bp64")]
+[node name="Bush12" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
 position = Vector2(97, -318)
 
-[node name="Bush2" parent="." instance=ExtResource("4_6bp64")]
+[node name="Bush13" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
 position = Vector2(-67, -435)
 
-[node name="Bush3" parent="." instance=ExtResource("4_6bp64")]
+[node name="Bush14" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
 position = Vector2(331, -459)
 
-[node name="tree" parent="." instance=ExtResource("6_344ge")]
+[node name="tree" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(-106, -208)
 
-[node name="tree2" parent="." instance=ExtResource("6_344ge")]
+[node name="tree2" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(-400, -226)
 
-[node name="tree3" parent="." instance=ExtResource("6_344ge")]
+[node name="tree3" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(-288, -256)
 
-[node name="tree4" parent="." instance=ExtResource("6_344ge")]
+[node name="tree4" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(54, -261)
 
-[node name="tree5" parent="." instance=ExtResource("6_344ge")]
+[node name="tree5" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(321, -223)
 
-[node name="tree6" parent="." instance=ExtResource("6_344ge")]
+[node name="tree6" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(547, -295)
 
-[node name="tree7" parent="." instance=ExtResource("6_344ge")]
+[node name="tree7" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(671, -310)
 
-[node name="tree8" parent="." instance=ExtResource("6_344ge")]
-position = Vector2(788, -469)
-
-[node name="Bush4" parent="." instance=ExtResource("4_6bp64")]
+[node name="Bush15" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
 position = Vector2(458, -323)
 
-[node name="tree9" parent="." instance=ExtResource("6_344ge")]
+[node name="tree8" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+position = Vector2(788, -469)
+
+[node name="tree9" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(265, -432)
 
-[node name="tree10" parent="." instance=ExtResource("6_344ge")]
+[node name="tree10" parent="Nature Stuff" instance=ExtResource("6_344ge")]
 position = Vector2(76, -435)
 
-[node name="Bush5" parent="." instance=ExtResource("4_6bp64")]
+[node name="Bush16" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
 position = Vector2(-487, -443)
 
-[node name="Bush6" parent="." instance=ExtResource("4_6bp64")]
+[node name="Bush17" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
 position = Vector2(-291, 64)
+
+[node name="Snow_Tree" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-836, 432)
