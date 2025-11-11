@@ -1,5 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://do2rjv0odnjt8"]
+[gd_scene load_steps=3 format=3 uid="uid://drtnmxngoa0ao"]
 
-[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="1_4flbx"]
+[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="1_v0iea"]
 
-[node name="ExamplePlayer" instance=ExtResource("1_4flbx")]
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4flbx"]
+polygon = PackedVector2Array(-3, 10, -1, 10, -1, 9, 0, 9, 0, 8, 1, 8, 1, 10, 3, 10, 3, 9, 4, 9, 4, 8, 6, 8, 6, 7, 7, 7, 7, 5, 6, 5, 6, 4, 5, 4, 5, 3, 6, 3, 6, 2, 7, 2, 7, -4, 6, -4, 6, -5, 5, -5, 5, -6, 4, -6, 4, -7, 3, -7, 3, -8, -4, -8, -4, -7, -5, -7, -5, -6, -6, -6, -6, -5, -7, -5, -7, -2, -5, -2, -5, 2, -4, 2, -4, 3, -5, 3, -5, 4, -6, 4, -6, 7, -5, 7, -5, 8, -3, 8)
+
+[node name="ExamplePlayer" instance=ExtResource("1_v0iea")]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." index="2"]
+occluder = SubResource("OccluderPolygon2D_4flbx")

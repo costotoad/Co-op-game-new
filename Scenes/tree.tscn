@@ -1,10 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://d2oi5nnvghvno"]
 
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://uf0n8woye0ex" path="res://Assets/freenature.png/freenature.png" id="1_jndjd"]
-=======
+
 [ext_resource type="Texture2D" uid="uid://b1vjc3xgm0g0f" path="res://Assets/freenature.png/freenature.png" id="1_brfkd"]
->>>>>>> 01f94d9fa4be8e24fc3e67b1451e96b0b3e1c742
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0vwjc"]
 atlas = ExtResource("1_jndjd")
@@ -23,13 +21,3 @@ animations = [{
 
 [node name="tree" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_rsuno")
-<<<<<<< HEAD
-=======
-
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(3.8147e-06, -4.76837e-07)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(1.49642, 8.02141)
-shape = SubResource("RectangleShape2D_l7sa7")
->>>>>>> 01f94d9fa4be8e24fc3e67b1451e96b0b3e1c742
