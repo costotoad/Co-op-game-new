@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cb2uih2fse8ia"]
+
+[ext_resource type="Texture2D" uid="uid://uf0n8woye0ex" path="res://Assets/freenature.png/freenature.png" id="1_l4egp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqmni"]
+atlas = ExtResource("1_l4egp")
+region = Rect2(170, 256, 85, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_to7rr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rqmni")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="redwood" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_to7rr")
