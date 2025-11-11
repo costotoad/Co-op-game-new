@@ -5,7 +5,7 @@
 
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0vwjc"]
-atlas = ExtResource("1_jndjd")
+atlas = ExtResource("1_brfkd")
 region = Rect2(85, 256, 85, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rsuno"]
