@@ -18,4 +18,5 @@ animations = [{
 }]
 
 [node name="tree" type="AnimatedSprite2D"]
+position = Vector2(11, 1)
 sprite_frames = SubResource("SpriteFrames_rsuno")
