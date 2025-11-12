@@ -1,13 +1,22 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=10 format=3 uid="uid://c1ticlkbjsb7i"]
+=======
+[gd_scene load_steps=9 format=3 uid="uid://dm88oaupvxlxq"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://djfswf65nn2kr" path="res://Assets/grass place holder.png" id="1_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" path="res://Scenes/snow_tree.tscn" id="4_kry3j"]
 [ext_resource type="PackedScene" path="res://Scenes/bush_orange.tscn" id="5_21xkr"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://djebsdqhs3h8o" path="res://Scenes/tree.tscn" id="6_344ge"]
 [ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://bps3gtgwblcrw" path="res://Scenes/redwood.tscn" id="8_hptm8"]
+=======
+[ext_resource type="PackedScene" uid="uid://cuslgpwghryjn" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://ceh5x6qm45hnt" path="res://Scenes/redwood.tscn" id="8_hptm8"]
+>>>>>>> Stashed changes
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_344ge"]
 polygon = PackedVector2Array(-13, -46, 1, -46, 9, -38, 9, -26, 9, -16, 7, -14, 1, -10, -11, -10, -17, -16, -17, -22, -19, -34, -19, -40)
@@ -110,38 +119,148 @@ position = Vector2(861, -57)
 [node name="bush_orange6" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
 position = Vector2(743, -68)
 
-[node name="Node2D" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="Node2D" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-826, -437)
+script = null
 
-[node name="Node2D2" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="Node2D2" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-613, -455)
+script = null
 
-[node name="Node2D3" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="Node2D3" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-741, -306)
+script = null
 
-[node name="Node2D4" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="Node2D4" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-479, -338)
+script = null
 
-[node name="Node2D5" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="Node2D5" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-338, -487)
+script = null
 
-[node name="Node2D6" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="Node2D6" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-890, -204)
+script = null
 
-[node name="Node2D7" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="Node2D7" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-199, -300)
+script = null
 
-[node name="Node2D9" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="Node2D9" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(235, -326)
+script = null
 
-[node name="Node2D8" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="Node2D8" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-149, -458)
+script = null
 
-[node name="Node2D10" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="Node2D10" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(848, -378)
+script = null
 
-[node name="Node2D11" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="Node2D11" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(483, -480)
+script = null
 
 [node name="bush_orange7" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
 position = Vector2(750, 97)
@@ -239,38 +358,138 @@ position = Vector2(-67, -435)
 [node name="Bush14" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
 position = Vector2(331, -459)
 
-[node name="tree" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="tree" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-106, -208)
+script = null
 
-[node name="tree2" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="tree2" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-400, -226)
+script = null
 
-[node name="tree3" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="tree3" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-288, -256)
+script = null
 
-[node name="tree4" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="tree4" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(54, -261)
+script = null
 
-[node name="tree5" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="tree5" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(321, -223)
+script = null
 
-[node name="tree6" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="tree6" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(547, -295)
+script = null
 
-[node name="tree7" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="tree7" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(671, -310)
+script = null
 
 [node name="Bush15" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
 position = Vector2(458, -323)
 
-[node name="tree8" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="tree8" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(788, -469)
+script = null
 
-[node name="tree9" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="tree9" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(265, -432)
+script = null
 
-[node name="tree10" parent="Nature Stuff" instance=ExtResource("6_344ge")]
+[node name="tree10" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(76, -435)
+script = null
 
 [node name="Bush16" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
 position = Vector2(-487, -443)
