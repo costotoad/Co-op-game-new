@@ -7,4 +7,5 @@
 
 [node name="PointLight2D" parent="." index="2"]
 scale = Vector2(0.391, 0.744)
+energy = 6.18
 texture = ExtResource("2_hcics")

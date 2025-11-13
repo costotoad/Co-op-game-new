@@ -8,4 +8,5 @@
 [node name="PointLight2D" parent="." index="2"]
 position = Vector2(80, 7.95808e-13)
 scale = Vector2(0.391, 0.744)
+energy = 4.09
 texture = ExtResource("2_qk2hv")
