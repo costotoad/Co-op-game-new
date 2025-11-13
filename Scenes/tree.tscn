@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=5 format=3 uid="uid://d2oi5nnvghvno"]
 
 [ext_resource type="Texture2D" uid="uid://b1vjc3xgm0g0f" path="res://Assets/freenature.png/freenature.png" id="1_brfkd"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://d2oi5nnvghvno"]
+
+[ext_resource type="Texture2D" uid="uid://bu6ivr634b1t3" path="res://Assets/freenature.png/freenature.png" id="1_brfkd"]
+>>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0vwjc"]
 atlas = ExtResource("1_brfkd")

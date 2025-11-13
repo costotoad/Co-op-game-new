@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="Multiplayer Project"
+<<<<<<< Updated upstream
 run/main_scene="uid://wab6noht700v"
+=======
+run/main_scene="uid://bs5b2r5t3a01c"
+>>>>>>> Stashed changes
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 
 [display]

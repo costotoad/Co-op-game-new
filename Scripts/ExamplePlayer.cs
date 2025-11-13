@@ -42,5 +42,9 @@ public partial class ExamplePlayer : CharacterBody2D
 		else {
 			flashlight.Visible = true;
 			}
+<<<<<<< Updated upstream
+=======
+		
+>>>>>>> Stashed changes
 	}
 }
