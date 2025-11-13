@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="Multiplayer Project"
-run/main_scene="uid://cgoctc7myuy0e"
+run/main_scene="uid://bs5b2r5t3a01c"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
+<<<<<<<Updatedupstreamrun/main_scene="uid://wab6noht700v"
 
 [display]
 
@@ -29,7 +30,6 @@ project/assembly_name="Multiplayer Project"
 
 folder_colors={
 "res://Assets/": "blue",
-"res://Documentation/": "gray",
 "res://Scenes/": "red",
 "res://Scripts/": "yellow"
 }
