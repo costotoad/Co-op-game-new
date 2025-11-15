@@ -19,7 +19,7 @@ autoplay = "default"
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 texture_filter = 1
-position = Vector2(75, -2)
+position = Vector2(47, -1)
 rotation = -1.5708
-scale = Vector2(0.390668, 0.743515)
+scale = Vector2(0.200736, 0.480084)
 texture = ExtResource("3_lr3g7")

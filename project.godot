@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Multiplayer Project"
 run/main_scene="uid://bs5b2r5t3a01c"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 <<<<<<<Updatedupstreamrun/main_scene="uid://wab6noht700v"
 
 [display]

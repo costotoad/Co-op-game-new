@@ -6,8 +6,9 @@
 [node name="ExamplePlayer2" instance=ExtResource("1_1uigb")]
 
 [node name="PointLight2D" parent="." index="2"]
-position = Vector2(37, 1.90735e-06)
+position = Vector2(46.2431, 1.19786e-05)
 rotation = 1.5708
-scale = Vector2(0.0965363, 0.1724)
-energy = 1.65
+scale = Vector2(0.0736412, 0.217738)
+color = Color(1, 0, 0, 1)
+energy = 10.0
 texture = ExtResource("2_1uigb")

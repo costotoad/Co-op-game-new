@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Assets/bush_orange.tscn" id="5_21xkr"]
 [ext_resource type="PackedScene" uid="uid://bxksa6m2p071r" path="res://Scenes/example_player_2.tscn" id="6_6bp64"]
 [ext_resource type="PackedScene" uid="uid://cn1b0jtauo2nk" path="res://Scenes/example_player_3.tscn" id="7_344ge"]
-[ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://b71bsa7xd61q5" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 
 [node name="Main" type="Node2D"]
 
