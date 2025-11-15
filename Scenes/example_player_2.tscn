@@ -1,12 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://bxksa6m2p071r"]
 
 [ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer1.tscn" id="1_1uigb"]
-[ext_resource type="Texture2D" uid="uid://kunuu4wgggl2" path="res://Assets/image-removebg-preview.png" id="2_qk2hv"]
+[ext_resource type="Texture2D" uid="uid://ceyq7kbmpapmm" path="res://Assets/Red-Triangle-Free-PNG-removebg-preview.png" id="2_1uigb"]
 
 [node name="ExamplePlayer2" instance=ExtResource("1_1uigb")]
 
 [node name="PointLight2D" parent="." index="2"]
-position = Vector2(80, 7.95808e-13)
-scale = Vector2(0.391, 0.744)
-energy = 4.09
-texture = ExtResource("2_qk2hv")
+position = Vector2(37, 1.90735e-06)
+rotation = 1.5708
+scale = Vector2(0.0965363, 0.1724)
+energy = 1.65
+texture = ExtResource("2_1uigb")
