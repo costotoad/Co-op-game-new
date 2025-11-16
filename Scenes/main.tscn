@@ -215,7 +215,7 @@ position = Vector2(585, -239)
 position = Vector2(-154, -205)
 
 [node name="pine_tree26" parent="Trees" instance=ExtResource("7_ynf5e")]
-position = Vector2(121, 345)
+position = Vector2(389, 450)
 
 [node name="pine_tree3" parent="Trees" instance=ExtResource("7_ynf5e")]
 position = Vector2(-418, -60)
@@ -257,7 +257,7 @@ scale = Vector2(2.18923, 1.684)
 shape = SubResource("SegmentShape2D_6bp64")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1824, 1079)
+position = Vector2(1824, 1082)
 rotation = 1.5708
 scale = Vector2(2.18923, 1.684)
 shape = SubResource("SegmentShape2D_6bp64")
