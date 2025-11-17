@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" uid="uid://b2jrjse74j8g0" path="res://Scenes/snow_tree.tscn" id="4_kry3j"]
-[ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Scenes/bush_orange.tscn" id="5_21xkr"]
+[ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Scenes/bush_orange.tscn" id="7_6bp64"]
 [ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://bps3gtgwblcrw" path="res://Scenes/redwood.tscn" id="8_hptm8"]
 
@@ -85,8 +85,18 @@ position = Vector2(-615, 414)
 [node name="Snow_Tree5" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
 position = Vector2(-873, 299)
 
-[node name="bush_orange" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(789, 35)
+script = null
 
 [node name="Snow_Tree7" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
 position = Vector2(-440, 414)
@@ -94,26 +104,96 @@ position = Vector2(-440, 414)
 [node name="Snow_Tree6" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
 position = Vector2(-539, 221)
 
-[node name="bush_orange2" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange2" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(686, 88)
+script = null
 
-[node name="bush_orange3" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange3" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(693, -13)
+script = null
 
-[node name="bush_orange4" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange4" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(778, 97)
+script = null
 
-[node name="bush_orange5" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange5" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(861, -57)
+script = null
 
-[node name="bush_orange6" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange6" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(743, -68)
+script = null
 
-[node name="bush_orange7" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange7" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(750, 97)
+script = null
 
-[node name="bush_orange8" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange8" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(759, 79)
+script = null
 
 [node name="pine_tree" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(-719, -51)
@@ -216,3 +296,30 @@ position = Vector2(-291, 64)
 
 [node name="Snow_Tree" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
 position = Vector2(-836, 432)
+
+[node name="bush_orange12" parent="." instance=ExtResource("7_6bp64")]
+position = Vector2(743, -52)
+
+[node name="bush_orange11" parent="." instance=ExtResource("7_6bp64")]
+position = Vector2(757, 45)
+
+[node name="bush_orange10" parent="." instance=ExtResource("7_6bp64")]
+position = Vector2(667, 49)
+
+[node name="bush_orange4" parent="." instance=ExtResource("7_6bp64")]
+position = Vector2(879, -15)
+
+[node name="bush_orange5" parent="." instance=ExtResource("7_6bp64")]
+position = Vector2(848, 65)
+
+[node name="bush_orange6" parent="." instance=ExtResource("7_6bp64")]
+position = Vector2(784, 142)
+
+[node name="bush_orange7" parent="." instance=ExtResource("7_6bp64")]
+position = Vector2(629, 144)
+
+[node name="bush_orange8" parent="." instance=ExtResource("7_6bp64")]
+position = Vector2(659, 145)
+
+[node name="bush_orange9" parent="." instance=ExtResource("7_6bp64")]
+position = Vector2(645, 132)
