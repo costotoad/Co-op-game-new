@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" uid="uid://b2jrjse74j8g0" path="res://Scenes/snow_tree.tscn" id="4_kry3j"]
-[ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Scenes/bush_orange.tscn" id="5_21xkr"]
+[ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Assets/bush_orange.tscn" id="5_21xkr"]
 [ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
 [ext_resource type="PackedScene" uid="uid://bps3gtgwblcrw" path="res://Scenes/redwood.tscn" id="8_hptm8"]
