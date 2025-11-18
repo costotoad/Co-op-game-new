@@ -1,15 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://djwhitnps2ucx"]
+[gd_scene load_steps=8 format=3 uid="uid://bs5b2r5t3a01c"]
 
 [ext_resource type="Texture2D" uid="uid://djfswf65nn2kr" path="res://Assets/grass place holder.png" id="1_jjvhh"]
-[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="2_kry3j"]
+[ext_resource type="PackedScene" uid="uid://e8vofd8hey05" path="res://Scenes/ExamplePlayer1.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" uid="uid://b2jrjse74j8g0" path="res://Scenes/snow_tree.tscn" id="4_kry3j"]
 [ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Scenes/bush_orange.tscn" id="7_6bp64"]
-[ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://b71bsa7xd61q5" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://bps3gtgwblcrw" path="res://Scenes/redwood.tscn" id="8_hptm8"]
-
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_344ge"]
-polygon = PackedVector2Array(-13, -46, 1, -46, 9, -38, 9, -26, 9, -16, 7, -14, 1, -10, -11, -10, -17, -16, -17, -22, -19, -34, -19, -40)
 
 [node name="Main" type="Node2D"]
 
@@ -30,13 +27,8 @@ shadow_enabled = true
 color = Color(0.295867, 0.295866, 0.295866, 1)
 
 [node name="ExamplePlayer" parent="." instance=ExtResource("2_kry3j")]
-position = Vector2(24, -9)
+position = Vector2(7, -26)
 scale = Vector2(2, 2)
-
-[node name="LightOccluder2D" type="LightOccluder2D" parent="ExamplePlayer"]
-position = Vector2(2.5, 15)
-scale = Vector2(0.5, 0.5)
-occluder = SubResource("OccluderPolygon2D_344ge")
 
 [node name="Nature Stuff" type="Node2D" parent="."]
 
