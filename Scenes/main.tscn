@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://djwhitnps2ucx"]
+[gd_scene load_steps=10 format=3 uid="uid://c1ticlkbjsb7i"]
 
 [ext_resource type="Texture2D" uid="uid://djfswf65nn2kr" path="res://Assets/grass place holder.png" id="1_jjvhh"]
 [ext_resource type="PackedScene" path="res://Scenes/ExamplePlayer.tscn" id="2_kry3j"]
@@ -216,3 +216,6 @@ position = Vector2(-291, 64)
 
 [node name="Snow_Tree" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
 position = Vector2(-836, 432)
+
+[node name="WereWolf" parent="." instance=ExtResource("8_344ge")]
+position = Vector2(86, -19)
