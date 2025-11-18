@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cn1b0jtauo2nk"]
 
 [ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer1.tscn" id="1_c3cmq"]
-[ext_resource type="Texture2D" uid="uid://x7ahmv7jxkfo" path="res://Assets/Blue.png" id="2_c3cmq"]
+[ext_resource type="Texture2D" uid="uid://civc5b14qstg4" path="res://Assets/Blue.png" id="2_c3cmq"]
 
 [node name="ExamplePlayer3" instance=ExtResource("1_c3cmq")]
 

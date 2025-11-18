@@ -1,12 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://bs5b2r5t3a01c"]
+[gd_scene load_steps=10 format=3 uid="uid://c1ticlkbjsb7i"]
 
-[ext_resource type="Texture2D" uid="uid://hduu4uf6pb87" path="res://Assets/grass place holder.png" id="1_jjvhh"]
-[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer1.tscn" id="2_kry3j"]
+[ext_resource type="Texture2D" uid="uid://c5551t20tvkie" path="res://Assets/grass place holder.png" id="1_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Assets/bush_orange.tscn" id="5_21xkr"]
-[ext_resource type="PackedScene" uid="uid://bxksa6m2p071r" path="res://Scenes/example_player_2.tscn" id="6_6bp64"]
-[ext_resource type="PackedScene" uid="uid://cn1b0jtauo2nk" path="res://Scenes/example_player_3.tscn" id="7_344ge"]
-[ext_resource type="PackedScene" uid="uid://b71bsa7xd61q5" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
+[ext_resource type="PackedScene" uid="uid://bps3gtgwblcrw" path="res://Scenes/redwood.tscn" id="8_hptm8"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_6bp64"]
 a = Vector2(0.456772, -61.1641)
@@ -233,31 +233,8 @@ position = Vector2(-77, 85)
 scale = Vector2(2, 2)
 collision_layer = 2
 
-[node name="ExamplePlayer2" parent="Players" instance=ExtResource("6_6bp64")]
-position = Vector2(-137, -73)
-scale = Vector2(2, 2)
-collision_layer = 2
+[node name="Snow_Tree" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-836, 432)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(-959, -540)
-collision_mask = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-1, 0)
-shape = SubResource("SegmentShape2D_6bp64")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1920, -2)
-shape = SubResource("SegmentShape2D_6bp64")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1817, -2)
-rotation = 1.5708
-scale = Vector2(2.18923, 1.684)
-shape = SubResource("SegmentShape2D_6bp64")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1824, 1082)
-rotation = 1.5708
-scale = Vector2(2.18923, 1.684)
-shape = SubResource("SegmentShape2D_6bp64")
+[node name="WereWolf" parent="." instance=ExtResource("8_344ge")]
+position = Vector2(86, -19)
