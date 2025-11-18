@@ -1,10 +1,10 @@
-[gd_scene load_steps=39 format=3 uid="uid://byo72bhhqc2cm"]
+[gd_scene load_steps=40 format=3 uid="uid://wco28vbu84lu"]
 
-[ext_resource type="Texture2D" uid="uid://cf1aoyk3bssuy" path="res://Assets/pixil-frame-0 (3).png" id="1_ej3ap"]
-[ext_resource type="Texture2D" uid="uid://dsqi3kq8p2q1g" path="res://Assets/Back_walk.png" id="2_1epm0"]
-[ext_resource type="Texture2D" uid="uid://dg34aht74x414" path="res://Assets/front_walk.png" id="3_5osyv"]
-[ext_resource type="Texture2D" uid="uid://7cq3mljc2pj3" path="res://Assets/side_walk.png" id="4_7ak2q"]
-[ext_resource type="Texture2D" uid="uid://dgpgouax7knxj" path="res://Assets/Side face.png" id="5_fhhqw"]
+[ext_resource type="Texture2D" uid="uid://cp3onc4o4fyt6" path="res://Assets/pixil-frame-0 (3).png" id="1_ej3ap"]
+[ext_resource type="Texture2D" uid="uid://dd2pd88edryuw" path="res://Assets/Back_walk.png" id="2_1epm0"]
+[ext_resource type="Texture2D" uid="uid://cmkdymqtsb0n0" path="res://Assets/front_walk.png" id="3_5osyv"]
+[ext_resource type="Texture2D" uid="uid://s5bnmoojgos6" path="res://Assets/side_walk.png" id="4_7ak2q"]
+[ext_resource type="Texture2D" uid="uid://daeracmejop8f" path="res://Assets/Side face.png" id="5_fhhqw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u1bdw"]
 atlas = ExtResource("1_ej3ap")
@@ -253,9 +253,16 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ej3ap"]
+radius = 21.0
+height = 56.0
+
 [node name="WereWolf" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_736up")
 animation = &"Attack Foreward"
 frame_progress = 0.527548
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_ej3ap")
