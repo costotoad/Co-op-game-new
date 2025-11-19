@@ -1,13 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://c1ticlkbjsb7i"]
+[gd_scene load_steps=7 format=3 uid="uid://c1ticlkbjsb7i"]
 
 [ext_resource type="Texture2D" uid="uid://bwq52qhejmtk7" path="res://Assets/grass place holder.png" id="1_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer1.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Assets/bush_orange.tscn" id="5_21xkr"]
-[ext_resource type="PackedScene" uid="uid://bxksa6m2p071r" path="res://Scenes/example_player_2.tscn" id="7_344ge"]
 [ext_resource type="PackedScene" uid="uid://b71bsa7xd61q5" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
-[ext_resource type="PackedScene" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
-[ext_resource type="PackedScene" uid="uid://cn1b0jtauo2nk" path="res://Scenes/example_player_3.tscn" id="8_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
 
 [node name="Main" type="Node2D"]
 
@@ -224,12 +222,19 @@ visibility_layer = 3
 position = Vector2(24, -9)
 scale = Vector2(2, 2)
 collision_layer = 2
+ID = null
+
+[node name="ExamplePlayer2" parent="Players" instance=ExtResource("2_kry3j")]
+position = Vector2(-13, 54)
+scale = Vector2(2, 2)
+collision_layer = 2
+ID = 1
+
+[node name="ExamplePlayer3" parent="Players" instance=ExtResource("2_kry3j")]
+position = Vector2(-23, -54)
+scale = Vector2(2, 2)
+collision_layer = 2
+ID = 2
 
 [node name="WereWolf" parent="." instance=ExtResource("8_344ge")]
 position = Vector2(86, -19)
-
-[node name="ExamplePlayer2" parent="." instance=ExtResource("7_344ge")]
-position = Vector2(-17, 35)
-
-[node name="ExamplePlayer3" parent="." instance=ExtResource("8_ynf5e")]
-position = Vector2(-23, -62)

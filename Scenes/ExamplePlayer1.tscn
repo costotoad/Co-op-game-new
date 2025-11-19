@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c04o2rlv3fs11"]
 
 [ext_resource type="Script" uid="uid://c5xsyr2dqviyi" path="res://Scripts/ExamplePlayer.cs" id="1_hq2r4"]
-[ext_resource type="Texture2D" uid="uid://cu1ooriun7puf" path="res://Assets/image-removebg-preview (1).png" id="3_lr3g7"]
+[ext_resource type="Texture2D" uid="uid://brdc0mqocw3h8" path="res://Assets/white-removebg-preview.png" id="2_dx3a6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hq2r4"]
 radius = 7.0
@@ -9,6 +9,7 @@ height = 20.0
 
 [node name="ExamplePlayer1" type="CharacterBody2D"]
 script = ExtResource("1_hq2r4")
+ID = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_hq2r4")
@@ -19,7 +20,7 @@ autoplay = "default"
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 texture_filter = 1
-position = Vector2(38, -1)
+position = Vector2(22, 1.90735e-06)
 rotation = -1.5708
-scale = Vector2(0.130796, 0.38025)
-texture = ExtResource("3_lr3g7")
+scale = Vector2(0.0383693, 0.150647)
+texture = ExtResource("2_dx3a6")
