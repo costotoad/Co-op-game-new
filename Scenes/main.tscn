@@ -227,13 +227,13 @@ collision_layer = 2
 position = Vector2(-13, 54)
 scale = Vector2(2, 2)
 collision_layer = 2
-ID = 1
+PlayerID = 1
 
 [node name="ExamplePlayer3" parent="Players" instance=ExtResource("2_kry3j")]
 position = Vector2(-23, -54)
 scale = Vector2(2, 2)
 collision_layer = 2
-ID = 2
+PlayerID = 2
 
 [node name="WereWolf" parent="." instance=ExtResource("8_344ge")]
 position = Vector2(86, -19)
