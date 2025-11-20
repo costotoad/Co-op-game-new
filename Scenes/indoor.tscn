@@ -1,11 +1,13 @@
-[gd_scene load_steps=13 format=4 uid="uid://bfc7vang7flrd"]
+[gd_scene load_steps=16 format=4 uid="uid://pds1xcy3kndb"]
 
-[ext_resource type="Texture2D" uid="uid://vrifo7v4vysa" path="res://Assets/wood-1.png" id="1_11yms"]
-[ext_resource type="Texture2D" uid="uid://bjj441anjxpg1" path="res://Assets/Wood_2.png" id="2_xtf05"]
-[ext_resource type="Texture2D" uid="uid://chup3r20iw720" path="res://Assets/Wood_3.png" id="3_dscpb"]
-[ext_resource type="Texture2D" uid="uid://c17o6jtr6xi8d" path="res://Assets/Wood_base.png" id="4_eudks"]
+[ext_resource type="Texture2D" uid="uid://dpi6cs2rmhmwn" path="res://Assets/wood-1.png" id="1_11yms"]
+[ext_resource type="Texture2D" uid="uid://4vvsilhrcl7r" path="res://Assets/Wood_2.png" id="2_xtf05"]
+[ext_resource type="Texture2D" uid="uid://vf6y4kbtn7p1" path="res://Assets/Wood_3.png" id="3_dscpb"]
+[ext_resource type="Texture2D" uid="uid://db5nyypfkm3us" path="res://Assets/Wood_base.png" id="4_eudks"]
 [ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="5_kliaw"]
-[ext_resource type="Texture2D" uid="uid://bjow48m8ig471" path="res://Assets/RF_Catacombs_v1.0/candleB_04.png" id="6_xtf05"]
+[ext_resource type="Texture2D" uid="uid://cigltyr25e5de" path="res://Assets/RF_Catacombs_v1.0/candleB_04.png" id="6_xtf05"]
+[ext_resource type="Texture2D" uid="uid://bub471h7dn1mg" path="res://Assets/Light Circle.png" id="7_dscpb"]
+[ext_resource type="Texture2D" uid="uid://bq14poxwstc8i" path="res://Assets/Furniture.png" id="8_eudks"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6g1he"]
 texture = ExtResource("1_11yms")
@@ -169,7 +171,20 @@ sources/1 = SubResource("TileSetAtlasSource_nch22")
 sources/2 = SubResource("TileSetAtlasSource_hyogs")
 sources/3 = SubResource("TileSetAtlasSource_pqens")
 
-[sub_resource type="ImageTexture" id="ImageTexture_dscpb"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_kliaw"]
+atlas = ExtResource("8_eudks")
+region = Rect2(284, 0, 71, 83)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6g1he"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kliaw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Indoor" type="Node2D"]
 
@@ -195,6 +210,22 @@ scale = Vector2(2.26923, 1.83333)
 texture = ExtResource("6_xtf05")
 
 [node name="PointLight2D" type="PointLight2D" parent="CandleB04"]
-position = Vector2(-57.6653, 0)
-scale = Vector2(0.54949, 1)
-texture = SubResource("ImageTexture_dscpb")
+position = Vector2(0.771183, 0.681821)
+scale = Vector2(0.54949, 0.577273)
+texture = ExtResource("7_dscpb")
+
+[node name="Rugs" type="AnimatedSprite2D" parent="."]
+position = Vector2(-433, 328)
+sprite_frames = SubResource("SpriteFrames_6g1he")
+
+[node name="Rug1" type="AnimatedSprite2D" parent="Rugs"]
+position = Vector2(52, 0)
+sprite_frames = SubResource("SpriteFrames_6g1he")
+
+[node name="Rug 2" type="AnimatedSprite2D" parent="Rugs"]
+position = Vector2(104, 0)
+sprite_frames = SubResource("SpriteFrames_6g1he")
+
+[node name="Rug3" type="AnimatedSprite2D" parent="Rugs"]
+position = Vector2(156, 0)
+sprite_frames = SubResource("SpriteFrames_6g1he")
