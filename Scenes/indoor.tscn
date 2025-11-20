@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c17o6jtr6xi8d" path="res://Assets/Wood_base.png" id="4_eudks"]
 [ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="5_kliaw"]
 [ext_resource type="Texture2D" uid="uid://bjow48m8ig471" path="res://Assets/RF_Catacombs_v1.0/candleB_04.png" id="6_xtf05"]
+[ext_resource type="Texture2D" uid="uid://brew4svvl3vyr" path="res://Assets/Yellow_cricle.png" id="7_dscpb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6g1he"]
 texture = ExtResource("1_11yms")
@@ -169,8 +170,6 @@ sources/1 = SubResource("TileSetAtlasSource_nch22")
 sources/2 = SubResource("TileSetAtlasSource_hyogs")
 sources/3 = SubResource("TileSetAtlasSource_pqens")
 
-[sub_resource type="ImageTexture" id="ImageTexture_dscpb"]
-
 [node name="Indoor" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -189,12 +188,22 @@ color = Color(0.288518, 0.288518, 0.288518, 1)
 [node name="CanvasModulate" type="CanvasModulate" parent="DirectionalLight2D"]
 color = Color(0, 0, 0, 1)
 
+[node name="CandleB05" type="Sprite2D" parent="."]
+position = Vector2(394, 65)
+scale = Vector2(2.72855, 2.08055)
+texture = ExtResource("6_xtf05")
+
+[node name="PointLight2D" type="PointLight2D" parent="CandleB05"]
+position = Vector2(3.93453, -4.13551)
+scale = Vector2(1.04871, 1.34727)
+texture = ExtResource("7_dscpb")
+
 [node name="CandleB04" type="Sprite2D" parent="."]
-position = Vector2(-529.75, 296.75)
+position = Vector2(-499.75, 296.75)
 scale = Vector2(2.26923, 1.83333)
 texture = ExtResource("6_xtf05")
 
 [node name="PointLight2D" type="PointLight2D" parent="CandleB04"]
-position = Vector2(-57.6653, 0)
-scale = Vector2(0.54949, 1)
-texture = SubResource("ImageTexture_dscpb")
+position = Vector2(3.85592, -1.50001)
+scale = Vector2(1.04871, 1.34727)
+texture = ExtResource("7_dscpb")

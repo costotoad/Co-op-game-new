@@ -27,7 +27,6 @@ shadow_enabled = true
 color = Color(0.295867, 0.295866, 0.295866, 1)
 
 [node name="ExamplePlayer" parent="." instance=ExtResource("2_kry3j")]
-position = Vector2(7, -26)
 scale = Vector2(2, 2)
 
 [node name="Nature Stuff" type="Node2D" parent="."]
