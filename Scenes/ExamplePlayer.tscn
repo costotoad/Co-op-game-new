@@ -1,7 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://c04o2rlv3fs11"]
+[gd_scene load_steps=12 format=3 uid="uid://c04o2rlv3fs11"]
 
 [ext_resource type="Script" uid="uid://c5xsyr2dqviyi" path="res://Scripts/ExamplePlayer.cs" id="1_hq2r4"]
-[ext_resource type="Texture2D" uid="uid://b6p74yb7761cm" path="res://Assets/ExampleSprite.png" id="1_t0dbt"]
+[ext_resource type="Texture2D" uid="uid://cwcr4wt3saxb6" path="res://Assets/ExampleSprite.png" id="1_t0dbt"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hq2r4"]
 radius = 7.0
@@ -57,6 +57,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_hq2r4"]
+polygon = PackedVector2Array(7, 2, 7, 5, 7, 7, 6, 8, 4, 9, 3, 10, -3, 10, -6, 7, -7, -2, -7, -5, -4, -8, 3, -8, 7, -4)
+
 [node name="ExamplePlayer" type="CharacterBody2D"]
 script = ExtResource("1_hq2r4")
 
@@ -67,3 +70,6 @@ shape = SubResource("CapsuleShape2D_hq2r4")
 position = Vector2(1, -6)
 sprite_frames = SubResource("SpriteFrames_y2eu7")
 autoplay = "default"
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_hq2r4")
