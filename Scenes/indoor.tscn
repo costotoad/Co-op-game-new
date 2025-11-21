@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://bf3pjfuki4er3"]
+[gd_scene load_steps=26 format=4 uid="uid://bf3pjfuki4er3"]
 
 [ext_resource type="Texture2D" uid="uid://xtrtlq5aqlvg" path="res://Assets/wood-1.png" id="1_11yms"]
 [ext_resource type="Texture2D" uid="uid://ygtcfhmmqmmn" path="res://Assets/Wood_2.png" id="2_xtf05"]
@@ -230,6 +230,21 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_6g1he"]
+atlas = ExtResource("8_eudks")
+region = Rect2(150, 0, 50, 83)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nch22"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6g1he")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Indoor" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -324,7 +339,7 @@ position = Vector2(-585, -335)
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_hyogs")
 autoplay = "default"
-frame_progress = 0.381687
+frame_progress = 0.712329
 
 [node name="PointLight2D" type="PointLight2D" parent="Candle2"]
 position = Vector2(0.5, 1.5)
@@ -435,3 +450,8 @@ position = Vector2(0.5, 1.5)
 scale = Vector2(0.62346, 0.529166)
 shadow_enabled = true
 texture = ExtResource("7_dscpb")
+
+[node name="Water Cooler" type="AnimatedSprite2D" parent="."]
+position = Vector2(-432, -352)
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_nch22")
