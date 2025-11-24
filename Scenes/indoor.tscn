@@ -1,14 +1,14 @@
-[gd_scene load_steps=26 format=4 uid="uid://bf3pjfuki4er3"]
+[gd_scene load_steps=26 format=4 uid="uid://dcd4isnr6j18o"]
 
-[ext_resource type="Texture2D" uid="uid://xtrtlq5aqlvg" path="res://Assets/wood-1.png" id="1_11yms"]
-[ext_resource type="Texture2D" uid="uid://ygtcfhmmqmmn" path="res://Assets/Wood_2.png" id="2_xtf05"]
-[ext_resource type="Texture2D" uid="uid://bnsavc8qcquui" path="res://Assets/Wood_3.png" id="3_dscpb"]
-[ext_resource type="Texture2D" uid="uid://bd3x8fyob7e7i" path="res://Assets/Wood_base.png" id="4_eudks"]
-[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="5_kliaw"]
-[ext_resource type="Texture2D" uid="uid://b647gpllyivhh" path="res://Assets/Light Circle.png" id="7_dscpb"]
-[ext_resource type="Texture2D" uid="uid://bfnotgi85wifr" path="res://Assets/RF_Catacombs_v1.0/candleB_02.png" id="7_kliaw"]
-[ext_resource type="Texture2D" uid="uid://cip52o82x16en" path="res://Assets/RF_Catacombs_v1.0/candleB_03.png" id="8_6g1he"]
-[ext_resource type="Texture2D" uid="uid://bk5b0inj2sqt8" path="res://Assets/Furniture.png" id="8_eudks"]
+[ext_resource type="Texture2D" uid="uid://vrifo7v4vysa" path="res://Assets/wood-1.png" id="1_11yms"]
+[ext_resource type="Texture2D" uid="uid://bjj441anjxpg1" path="res://Assets/Wood_2.png" id="2_xtf05"]
+[ext_resource type="Texture2D" uid="uid://chup3r20iw720" path="res://Assets/Wood_3.png" id="3_dscpb"]
+[ext_resource type="Texture2D" uid="uid://c17o6jtr6xi8d" path="res://Assets/Wood_base.png" id="4_eudks"]
+[ext_resource type="Texture2D" uid="uid://c7k5hc5a50scg" path="res://Assets/Light Circle.png" id="7_dscpb"]
+[ext_resource type="Texture2D" uid="uid://b26wdeeye7le3" path="res://Assets/RF_Catacombs_v1.0/candleB_02.png" id="7_kliaw"]
+[ext_resource type="Texture2D" uid="uid://jd3c4ydq6r17" path="res://Assets/RF_Catacombs_v1.0/candleB_03.png" id="8_6g1he"]
+[ext_resource type="Texture2D" uid="uid://dpb2u4ga2o2ts" path="res://Assets/Furniture.png" id="8_eudks"]
+[ext_resource type="PackedScene" uid="uid://ckji33yqq0ijc" path="res://Scenes/ExamplePlayer1.tscn" id="9_kliaw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6g1he"]
 texture = ExtResource("1_11yms")
@@ -300,9 +300,6 @@ position = Vector2(8, -19)
 position = Vector2(-1.11257e-06, 30)
 shape = SubResource("RectangleShape2D_btdyl")
 
-[node name="ExamplePlayer" parent="." instance=ExtResource("5_kliaw")]
-position = Vector2(-37, -23)
-
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
 position = Vector2(651, 14.75)
 rotation = 1.5708
@@ -455,3 +452,6 @@ texture = ExtResource("7_dscpb")
 position = Vector2(-432, -352)
 scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_nch22")
+
+[node name="ExamplePlayer1" parent="." instance=ExtResource("9_kliaw")]
+position = Vector2(-67, -27)
