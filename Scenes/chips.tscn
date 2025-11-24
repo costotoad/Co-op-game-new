@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://brqjnhtmlyh8e"]
+
+[ext_resource type="Texture2D" uid="uid://012mqjmkmoxl" path="res://Assets/food.png" id="1_2fqdv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tvnlx"]
+atlas = ExtResource("1_2fqdv")
+region = Rect2(52, 54, 26, 27)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5c522"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tvnlx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x0klo"]
+radius = 6.0
+height = 24.0
+
+[node name="Chips" type="AnimatedSprite2D"]
+position = Vector2(-2, 0)
+sprite_frames = SubResource("SpriteFrames_5c522")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(2, -1)
+shape = SubResource("CapsuleShape2D_x0klo")

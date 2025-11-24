@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://3cmjyei8le2o"]
+
+[ext_resource type="Texture2D" uid="uid://012mqjmkmoxl" path="res://Assets/food.png" id="1_bufoc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqwb1"]
+atlas = ExtResource("1_bufoc")
+region = Rect2(33, 25, 33, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ctvlf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rqwb1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f2td0"]
+
+[node name="Steak" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ctvlf")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_f2td0")
