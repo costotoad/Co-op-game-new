@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bs5b2r5t3a01c"]
+[gd_scene load_steps=8 format=3 uid="uid://bs5b2r5t3a01c"]
 
 [ext_resource type="Texture2D" uid="uid://djfswf65nn2kr" path="res://Assets/grass place holder.png" id="1_jjvhh"]
 [ext_resource type="PackedScene" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" path="res://Scenes/snow_tree.tscn" id="4_kry3j"]
+[ext_resource type="PackedScene" uid="uid://ckji33yqq0ijc" path="res://Scenes/ExamplePlayer1.tscn" id="6_s56wg"]
+[ext_resource type="PackedScene" uid="uid://wco28vbu84lu" path="res://Scenes/were_wolf.tscn" id="7_0yv2s"]
 [ext_resource type="PackedScene" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" path="res://Scenes/redwood.tscn" id="8_hptm8"]
 
@@ -204,7 +206,7 @@ position = Vector2(277, 70)
 position = Vector2(185, -50)
 
 [node name="pine_tree13" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
-position = Vector2(76, -28)
+position = Vector2(73, -31)
 
 [node name="pine_tree14" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(-57, -190)
@@ -220,3 +222,9 @@ position = Vector2(-126, 30)
 
 [node name="pine_tree18" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(-207, -102)
+
+[node name="ExamplePlayer1" parent="." instance=ExtResource("6_s56wg")]
+position = Vector2(-93, -51)
+
+[node name="WereWolf" parent="." instance=ExtResource("7_0yv2s")]
+position = Vector2(24, -55)

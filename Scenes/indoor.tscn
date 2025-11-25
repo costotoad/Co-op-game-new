@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://dcd4isnr6j18o"]
+[gd_scene load_steps=32 format=4 uid="uid://dcd4isnr6j18o"]
 
 [ext_resource type="Texture2D" uid="uid://vrifo7v4vysa" path="res://Assets/wood-1.png" id="1_11yms"]
 [ext_resource type="Texture2D" uid="uid://bjj441anjxpg1" path="res://Assets/Wood_2.png" id="2_xtf05"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b26wdeeye7le3" path="res://Assets/RF_Catacombs_v1.0/candleB_02.png" id="7_kliaw"]
 [ext_resource type="Texture2D" uid="uid://jd3c4ydq6r17" path="res://Assets/RF_Catacombs_v1.0/candleB_03.png" id="8_6g1he"]
 [ext_resource type="Texture2D" uid="uid://dpb2u4ga2o2ts" path="res://Assets/Furniture.png" id="8_eudks"]
+[ext_resource type="Texture2D" uid="uid://xt0qab8gth32" path="res://Assets/furniture (2).png" id="9_6g1he"]
 [ext_resource type="PackedScene" uid="uid://ckji33yqq0ijc" path="res://Scenes/ExamplePlayer1.tscn" id="9_kliaw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6g1he"]
@@ -202,6 +203,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nch22"]
+size = Vector2(112.5, 45)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_btdyl"]
 size = Vector2(112, 46)
 
@@ -230,6 +234,24 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_btdyl"]
+atlas = ExtResource("9_6g1he")
+region = Rect2(385, 0, 55, 83)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n357p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btdyl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jigg0"]
+size = Vector2(49, 54)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_6g1he"]
 atlas = ExtResource("8_eudks")
 region = Rect2(150, 0, 50, 83)
@@ -244,6 +266,9 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ti7q6"]
+size = Vector2(39.9999, 42.8571)
 
 [node name="Indoor" type="Node2D"]
 
@@ -284,8 +309,9 @@ sprite_frames = SubResource("SpriteFrames_pqens")
 [node name="Area2D" type="StaticBody2D" parent="Couch"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Couch/Area2D"]
-position = Vector2(8, 11)
-shape = SubResource("RectangleShape2D_btdyl")
+position = Vector2(7.5, 11.25)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_nch22")
 
 [node name="Couch2" type="AnimatedSprite2D" parent="."]
 position = Vector2(-614, -262)
@@ -448,10 +474,27 @@ scale = Vector2(0.62346, 0.529166)
 shadow_enabled = true
 texture = ExtResource("7_dscpb")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(608, -344)
+sprite_frames = SubResource("SpriteFrames_n357p")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="AnimatedSprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/StaticBody2D"]
+position = Vector2(2.5, 13)
+shape = SubResource("RectangleShape2D_jigg0")
+
 [node name="Water Cooler" type="AnimatedSprite2D" parent="."]
 position = Vector2(-432, -352)
 scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_nch22")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Water Cooler"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Water Cooler/StaticBody2D"]
+position = Vector2(-1.42853, 8.57144)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_ti7q6")
 
 [node name="ExamplePlayer1" parent="." instance=ExtResource("9_kliaw")]
 position = Vector2(-67, -27)
