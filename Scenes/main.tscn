@@ -1,13 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bs5b2r5t3a01c"]
+[gd_scene load_steps=6 format=3 uid="uid://bs5b2r5t3a01c"]
 
 [ext_resource type="Texture2D" uid="uid://djfswf65nn2kr" path="res://Assets/grass place holder.png" id="1_jjvhh"]
-[ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
-[ext_resource type="PackedScene" uid="uid://b2jrjse74j8g0" path="res://Scenes/snow_tree.tscn" id="4_kry3j"]
-[ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Scenes/bush_orange.tscn" id="5_21xkr"]
-[ext_resource type="PackedScene" uid="uid://b71bsa7xd61q5" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
-[ext_resource type="PackedScene" uid="uid://wco28vbu84lu" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
-[ext_resource type="PackedScene" uid="uid://bps3gtgwblcrw" path="res://Scenes/redwood.tscn" id="8_hptm8"]
-[ext_resource type="PackedScene" uid="uid://dvtgb8ylodpux" path="res://Scenes/ExamplePlayer1.tscn" id="9_ynf5e"]
+[ext_resource type="PackedScene" path="res://Scenes/bush.tscn" id="4_6bp64"]
+[ext_resource type="PackedScene" path="res://Scenes/snow_tree.tscn" id="4_kry3j"]
+[ext_resource type="PackedScene" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
+[ext_resource type="PackedScene" path="res://Scenes/redwood.tscn" id="8_hptm8"]
 
 [node name="Main" type="Node2D"]
 
@@ -26,7 +23,6 @@ shadow_enabled = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="DirectionalLight2D"]
 color = Color(0.295867, 0.295866, 0.295866, 1)
-
 
 [node name="Nature Stuff" type="Node2D" parent="."]
 
@@ -182,3 +178,45 @@ position = Vector2(-291, 64)
 
 [node name="Snow_Tree" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
 position = Vector2(-836, 432)
+
+[node name="Bush18" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(773, 15)
+
+[node name="Bush19" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(619, 60)
+
+[node name="Bush20" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(664, -38)
+
+[node name="Bush21" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(448, -32)
+
+[node name="Bush22" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(585, -113)
+
+[node name="Bush23" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(322, -117)
+
+[node name="Bush24" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(277, 70)
+
+[node name="Bush25" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(185, -50)
+
+[node name="pine_tree13" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(76, -28)
+
+[node name="pine_tree14" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-57, -190)
+
+[node name="pine_tree15" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-609, -150)
+
+[node name="pine_tree16" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-387, -223)
+
+[node name="pine_tree17" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-126, 30)
+
+[node name="pine_tree18" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-207, -102)
