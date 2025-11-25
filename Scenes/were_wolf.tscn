@@ -353,7 +353,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_x1fnr")
 }],
 "loop": true,
-"name": &"Idle Forward",
+"name": &"Forward Walk",
 "speed": 15.0
 }, {
 "frames": [{
@@ -416,5 +416,4 @@ animations = [{
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_736up")
-animation = &"Attack Foreward"
-frame_progress = 0.560562
+animation = &"Forward Walk"
