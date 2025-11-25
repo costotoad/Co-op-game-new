@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://c1ticlkbjsb7i"]
 
-[ext_resource type="Texture2D" uid="uid://hduu4uf6pb87" path="res://Assets/grass place holder.png" id="1_jjvhh"]
-[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/player.tscn" id="2_kry3j"]
+[ext_resource type="Texture2D" uid="uid://bwq52qhejmtk7" path="res://Assets/grass place holder.png" id="1_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/Player.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
-[ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Assets/bush_orange.tscn" id="5_21xkr"]
+[ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Scenes/bush_orange.tscn" id="5_21xkr"]
 [ext_resource type="Script" uid="uid://drwjkjdpkq84" path="res://Scripts/WereWolf.cs" id="7_6bp64"]
-[ext_resource type="PackedScene" uid="uid://b71bsa7xd61q5" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
-[ext_resource type="AudioStream" uid="uid://c57l7kqcdxtq4" path="res://Assets/sounds-of-a-storm-with-wind-and-thunder-375923.mp3" id="8_ynf5e"]
+[ext_resource type="AudioStream" uid="uid://cfi3krnqtqfqo" path="res://Assets/sounds-of-a-storm-with-wind-and-thunder-375923.mp3" id="8_ynf5e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6bp64"]
 size = Vector2(102, 1951)
@@ -17,20 +17,17 @@ size = Vector2(102, 1951)
 [node name="Players" type="Node2D" parent="."]
 visibility_layer = 3
 
-[node name="ExamplePlayer1" parent="Players" instance=ExtResource("2_kry3j")]
-position = Vector2(24, -9)
-scale = Vector2(2, 2)
-collision_layer = 2
+[node name="Player" parent="Players" instance=ExtResource("2_kry3j")]
+position = Vector2(-6, -83)
+scale = Vector2(1.56948, 1.62213)
 
-[node name="ExamplePlayer2" parent="Players" instance=ExtResource("2_kry3j")]
-position = Vector2(-13, 54)
-scale = Vector2(2, 2)
-collision_layer = 2
+[node name="Player2" parent="Players" instance=ExtResource("2_kry3j")]
+position = Vector2(-11, -54)
+scale = Vector2(1.56948, 1.62213)
 
-[node name="ExamplePlayer3" parent="Players" instance=ExtResource("2_kry3j")]
-position = Vector2(-23, -54)
-scale = Vector2(2, 2)
-collision_layer = 2
+[node name="Player3" parent="Players" instance=ExtResource("2_kry3j")]
+position = Vector2(-32, -28)
+scale = Vector2(1.56948, 1.62213)
 
 [node name="GrassPlaceHolder" type="Sprite2D" parent="."]
 position = Vector2(-4, 5)
