@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://c1ticlkbjsb7i"]
 
 [ext_resource type="Texture2D" uid="uid://bwq52qhejmtk7" path="res://Assets/grass place holder.png" id="1_jjvhh"]
-[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/Player.tscn" id="2_kry3j"]
+[ext_resource type="PackedScene" uid="uid://c52si30ays5pu" path="res://Scenes/Player.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Scenes/bush_orange.tscn" id="5_21xkr"]
 [ext_resource type="Script" uid="uid://drwjkjdpkq84" path="res://Scripts/WereWolf.cs" id="7_6bp64"]
@@ -24,10 +24,12 @@ scale = Vector2(1.56948, 1.62213)
 [node name="Player2" parent="Players" instance=ExtResource("2_kry3j")]
 position = Vector2(-11, -54)
 scale = Vector2(1.56948, 1.62213)
+ControllerId = 1
 
 [node name="Player3" parent="Players" instance=ExtResource("2_kry3j")]
 position = Vector2(-32, -28)
 scale = Vector2(1.56948, 1.62213)
+ControllerId = 2
 
 [node name="GrassPlaceHolder" type="Sprite2D" parent="."]
 position = Vector2(-4, 5)
