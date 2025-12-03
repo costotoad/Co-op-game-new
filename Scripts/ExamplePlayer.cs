@@ -19,7 +19,7 @@ public partial class ExamplePlayer : CharacterBody2D
 	{
 		var velocity = Velocity;
 
-		var direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
+		var direction = Input.GetVector("p1_left", "p1_right", "p1_up", "p1_down");
 		if (direction != Vector2.Zero)
 		{
 			velocity = direction * Speed;

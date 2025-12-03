@@ -17,9 +17,12 @@ public partial class WereWolf : CharacterBody2D
 	public override void _PhysicsProcess(double delta)
 	{
 		Vector2 velocity = Velocity;
-		Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
-
-
+		
+		get_joy_info(device: 0);
+		
+		Vector2 direction = get_joy_axis(device: 0,)
+		
+		
 
 		// Get the input direction and handle the movement/deceleration.
 		// As good practice, you should replace UI actions with custom gameplay actions.
@@ -35,18 +38,18 @@ public partial class WereWolf : CharacterBody2D
 		if (direction != Vector2.Zero)
 		{
 			velocity.X = direction.X * Speed;
-			sprite.Play("Back Walk");
+			sprite.Play("Forward Walk");
 		}
 		else
 		{
 			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
-			
+			sprite.Play("Forward Walk");
 		}
 
 		if (direction != Vector2.Zero)
 		{
 			velocity.Y = direction.Y * Speed;
-			sprite.Play("Left Walk");
+			sprite.Play("Forward Walk");
 		}
 		else
 		{
