@@ -1,11 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://wco28vbu84lu"]
+[gd_scene load_steps=18 format=3 uid="uid://wco28vbu84lu"]
 
 [ext_resource type="Texture2D" uid="uid://cqwlu5fttfsmy" path="res://Assets/werewolf-removebg-preview.png" id="1_15cbp"]
 [ext_resource type="Script" uid="uid://cmdh5fnywstf2" path="res://Scripts/WereWolf.cs" id="1_tq65y"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ej3ap"]
-radius = 15.0
-height = 54.0
+[ext_resource type="Texture2D" uid="uid://c7k5hc5a50scg" path="res://Assets/Light Circle.png" id="3_aa2x6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tq65y"]
 atlas = ExtResource("1_15cbp")
@@ -114,16 +111,25 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ej3ap"]
+radius = 15.0
+height = 54.0
+
 [node name="WereWolf" type="CharacterBody2D"]
 script = ExtResource("1_tq65y")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -9)
-shape = SubResource("CapsuleShape2D_ej3ap")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -15)
 sprite_frames = SubResource("SpriteFrames_sdvmb")
 animation = &"Forward Walk"
 autoplay = "Forward Walk"
-frame_progress = 0.651893
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -9)
+shape = SubResource("CapsuleShape2D_ej3ap")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(5.72205e-06, -9)
+scale = Vector2(2.02, 1.56)
+shadow_enabled = true
+texture = ExtResource("3_aa2x6")

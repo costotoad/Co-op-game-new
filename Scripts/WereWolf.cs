@@ -5,10 +5,10 @@ public partial class WereWolf : CharacterBody2D
 {
 	public const float Speed = 300.0f;
 	public const float JumpVelocity = -400.0f;
-
 	public AnimatedSprite2D sprite;
-	
-public override void _Ready()
+
+
+	public override void _Ready()
 	{
 		sprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 	}
@@ -29,27 +29,29 @@ public override void _Ready()
 
 		//mr. lemke's example
 		var animation = sprite.Animation;
-		if (direction = Input."ui_left");
-		sprite.Play("Left Walk");
-
+		
 
 
 		if (direction != Vector2.Zero)
 		{
 			velocity.X = direction.X * Speed;
+			sprite.Play("Back Walk");
 		}
 		else
 		{
 			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
+			
 		}
 
 		if (direction != Vector2.Zero)
 		{
 			velocity.Y = direction.Y * Speed;
+			sprite.Play("Left Walk");
 		}
 		else
 		{
 			velocity.Y = Mathf.MoveToward(Velocity.Y, 0, Speed);
+			sprite.Play("Forward Walk");
 		}
 
 		Velocity = velocity;

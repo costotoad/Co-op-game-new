@@ -24,7 +24,7 @@ energy = 0.1
 shadow_enabled = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="DirectionalLight2D"]
-color = Color(0.295867, 0.295866, 0.295866, 1)
+color = Color(0, 0, 0, 1)
 
 [node name="Nature Stuff" type="Node2D" parent="."]
 

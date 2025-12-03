@@ -310,7 +310,6 @@ sprite_frames = SubResource("SpriteFrames_pqens")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Couch/Area2D"]
 position = Vector2(7.5, 11.25)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_nch22")
 
 [node name="Couch2" type="AnimatedSprite2D" parent="."]
@@ -493,7 +492,6 @@ sprite_frames = SubResource("SpriteFrames_nch22")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Water Cooler/StaticBody2D"]
 position = Vector2(-1.42853, 8.57144)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_ti7q6")
 
 [node name="ExamplePlayer1" parent="." instance=ExtResource("9_kliaw")]
