@@ -15,10 +15,6 @@ run/main_scene="uid://c1ticlkbjsb7i"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 <<<<<<<Updatedupstreamrun/main_scene="uid://wab6noht700v"
 
-[autoload]
-
-ControllerManager="*res://ControllerManager.cs"
-
 [display]
 
 window/size/viewport_width=1920

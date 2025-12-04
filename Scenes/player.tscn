@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://c52si30ays5pu"]
 
-[ext_resource type="Script" uid="uid://dhdu65w3hsy08" path="res://Scenes/Player.cs" id="1_gntrk"]
+[ext_resource type="Script" uid="uid://dhdu65w3hsy08" path="res://Scripts/Player.cs" id="1_gntrk"]
 [ext_resource type="Texture2D" uid="uid://brdc0mqocw3h8" path="res://Assets/white-removebg-preview.png" id="2_dx3a6"]
 [ext_resource type="Texture2D" uid="uid://bf1yhv3mqp1ba" path="res://Assets/Characters_V3_Colour.png" id="3_gntrk"]
 
@@ -85,9 +85,16 @@ shape = SubResource("CapsuleShape2D_hq2r4")
 modulate = Color(1, 1, 1, 0.309804)
 self_modulate = Color(1, 1, 1, 0.501961)
 texture_filter = 1
-position = Vector2(32, -2.3842e-07)
+position = Vector2(-4.76837e-07, 9.09495e-13)
 rotation = -1.5708
 scale = Vector2(0.0668929, 0.183827)
 color = Color(1, 1, 1, 0.235294)
 energy = 6.71
 texture = ExtResource("2_dx3a6")
+offset = Vector2(0, 180)
+
+[node name="Area2D" type="Area2D" parent="flashlight"]
+
+[node name="CollisionShape2D2" type="CollisionPolygon2D" parent="flashlight/Area2D"]
+position = Vector2(0.726304, 36.3587)
+polygon = PackedVector2Array(-1.17707, 0.424335, 8.26956, 2.67197, 25.7093, 28.4536, 115.814, 182.879, 180.85, 299.227, 178.307, 302.4, 173.22, 303.722, -162.987, 305.023, -174.417, 303.743, -181.012, 299.264, -181.891, 296.864, -60.9497, 85.5038, -14.9873, 9.44145, -6.59421, 1.58798)
