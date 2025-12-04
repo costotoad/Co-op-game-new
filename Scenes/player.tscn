@@ -1,11 +1,100 @@
-[gd_scene load_steps=3 format=3 uid="uid://drtnmxngoa0ao"]
+[gd_scene load_steps=12 format=3 uid="uid://c52si30ays5pu"]
 
-[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="1_v0iea"]
+[ext_resource type="Script" uid="uid://dhdu65w3hsy08" path="res://Scripts/Player.cs" id="1_gntrk"]
+[ext_resource type="Texture2D" uid="uid://brdc0mqocw3h8" path="res://Assets/white-removebg-preview.png" id="2_dx3a6"]
+[ext_resource type="Texture2D" uid="uid://bf1yhv3mqp1ba" path="res://Assets/Characters_V3_Colour.png" id="3_gntrk"]
 
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4flbx"]
-polygon = PackedVector2Array(-3, 10, -1, 10, -1, 9, 0, 9, 0, 8, 1, 8, 1, 10, 3, 10, 3, 9, 4, 9, 4, 8, 6, 8, 6, 7, 7, 7, 7, 5, 6, 5, 6, 4, 5, 4, 5, 3, 6, 3, 6, 2, 7, 2, 7, -4, 6, -4, 6, -5, 5, -5, 5, -6, 4, -6, 4, -7, 3, -7, 3, -8, -4, -8, -4, -7, -5, -7, -5, -6, -6, -6, -6, -5, -7, -5, -7, -2, -5, -2, -5, 2, -4, 2, -4, 3, -5, 3, -5, 4, -6, 4, -6, 7, -5, 7, -5, 8, -3, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_dewec"]
+atlas = ExtResource("3_gntrk")
+region = Rect2(64, 0, 16, 16)
 
-[node name="ExamplePlayer" instance=ExtResource("1_v0iea")]
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ixxa"]
+atlas = ExtResource("3_gntrk")
+region = Rect2(80, 0, 16, 16)
 
-[node name="LightOccluder2D" type="LightOccluder2D" parent="." index="2"]
-occluder = SubResource("OccluderPolygon2D_4flbx")
+[sub_resource type="AtlasTexture" id="AtlasTexture_nn08x"]
+atlas = ExtResource("3_gntrk")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52ee3"]
+atlas = ExtResource("3_gntrk")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhhdu"]
+atlas = ExtResource("3_gntrk")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_megsn"]
+atlas = ExtResource("3_gntrk")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yoq75"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dewec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ixxa")
+}],
+"loop": true,
+"name": &"DownWalk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nn08x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52ee3")
+}],
+"loop": true,
+"name": &"SideWalk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhhdu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_megsn")
+}],
+"loop": true,
+"name": &"UpWalk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hq2r4"]
+radius = 8.0
+height = 18.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_gntrk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 3
+position = Vector2(1, -1)
+sprite_frames = SubResource("SpriteFrames_yoq75")
+animation = &"DownWalk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_hq2r4")
+
+[node name="flashlight" type="PointLight2D" parent="."]
+modulate = Color(1, 1, 1, 0.309804)
+self_modulate = Color(1, 1, 1, 0.501961)
+texture_filter = 1
+position = Vector2(-4.76837e-07, 9.09495e-13)
+rotation = -1.5708
+scale = Vector2(0.0668929, 0.183827)
+color = Color(1, 1, 1, 0.235294)
+energy = 6.71
+texture = ExtResource("2_dx3a6")
+offset = Vector2(0, 180)
+
+[node name="Area2D" type="Area2D" parent="flashlight"]
+
+[node name="CollisionShape2D2" type="CollisionPolygon2D" parent="flashlight/Area2D"]
+position = Vector2(0.726304, 36.3587)
+polygon = PackedVector2Array(-1.17707, 0.424335, 8.26956, 2.67197, 25.7093, 28.4536, 115.814, 182.879, 180.85, 299.227, 178.307, 302.4, 173.22, 303.722, -162.987, 305.023, -174.417, 303.743, -181.012, 299.264, -181.891, 296.864, -60.9497, 85.5038, -14.9873, 9.44145, -6.59421, 1.58798)
