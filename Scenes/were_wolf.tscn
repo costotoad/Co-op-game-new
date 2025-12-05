@@ -5,6 +5,14 @@
 [ext_resource type="Texture2D" uid="uid://c7k5hc5a50scg" path="res://Assets/Light Circle.png" id="3_aa2x6"]
 [ext_resource type="Script" uid="uid://d2v3noibwat4y" path="res://Scripts/Killzone.cs" id="4_67aks"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_67aks"]
+radius = 69.0
+height = 138.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ej3ap"]
+radius = 15.0
+height = 54.0
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_tq65y"]
 atlas = ExtResource("1_15cbp")
 region = Rect2(0, 0, 48, 64)
@@ -112,21 +120,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_67aks"]
-radius = 66.0303
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ej3ap"]
-radius = 15.0
-height = 54.0
-
 [node name="WereWolf" type="CharacterBody2D"]
 script = ExtResource("1_tq65y")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -15)
-sprite_frames = SubResource("SpriteFrames_sdvmb")
-animation = &"Forward Walk"
-autoplay = "Forward Walk"
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(5.72205e-06, -9)
@@ -139,11 +134,18 @@ position = Vector2(-15, 0)
 script = ExtResource("4_67aks")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
-position = Vector2(15, 0)
-shape = SubResource("CircleShape2D_67aks")
+position = Vector2(15, -4)
+shape = SubResource("CapsuleShape2D_67aks")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(0, -9)
 shape = SubResource("CapsuleShape2D_ej3ap")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -15)
+sprite_frames = SubResource("SpriteFrames_sdvmb")
+animation = &"Forward Walk"
+autoplay = "Forward Walk"
+
 [connection signal="body_entered" from="killzone" to="killzone" method="OnBodyEntered"]
+[connection signal="body_exited" from="killzone" to="killzone" method="OnBodyExited"]

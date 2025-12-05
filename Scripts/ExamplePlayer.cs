@@ -14,7 +14,7 @@ public partial class ExamplePlayer : CharacterBody2D
 		sprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		flashlight = GetNode<PointLight2D>("PointLight2D");
 	}
-	
+
 	public override void _PhysicsProcess(double delta)
 	{
 		var velocity = Velocity;
@@ -34,17 +34,23 @@ public partial class ExamplePlayer : CharacterBody2D
 		MoveAndSlide();
 		Rotation = Velocity.Angle() + Mathf.DegToRad(0);
 
-		if (Velocity == Vector2.Zero) 
+		if (Velocity == Vector2.Zero)
 		{
 			flashlight.Visible = false;
 		}
-		else 
+		else
 		{
 			flashlight.Visible = true;
 		}
 	}
-	
-	public void MakeVisible() {
-		
+
+	public void MakeVisible()
+	{
+		sprite.Visible = true;
+	}
+
+	public void MakeInvisible()
+	{
+		sprite.Visible = false;
 	}
 }
