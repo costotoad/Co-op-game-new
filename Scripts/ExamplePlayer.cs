@@ -43,4 +43,8 @@ public partial class ExamplePlayer : CharacterBody2D
 			flashlight.Visible = true;
 		}
 	}
+	
+	public void MakeVisible() {
+		
+	}
 }
