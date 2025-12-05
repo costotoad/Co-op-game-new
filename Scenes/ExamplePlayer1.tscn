@@ -1,23 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://ckji33yqq0ijc"]
+[gd_scene load_steps=4 format=3 uid="uid://ckji33yqq0ijc"]
 
 [ext_resource type="Script" uid="uid://c5xsyr2dqviyi" path="res://Scripts/ExamplePlayer.cs" id="1_hq2r4"]
-[ext_resource type="Texture2D" uid="uid://brew4svvl3vyr" path="res://Assets/Yellow_cricle.png" id="2_08si7"]
 [ext_resource type="Texture2D" uid="uid://b8owkvtvqbqw8" path="res://Assets/image-removebg-preview (1).png" id="3_lr3g7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hq2r4"]
 radius = 7.0
 height = 20.0
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_1esws"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_08si7")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [node name="ExamplePlayer1" type="CharacterBody2D"]
 script = ExtResource("1_hq2r4")
@@ -26,9 +14,7 @@ script = ExtResource("1_hq2r4")
 shape = SubResource("CapsuleShape2D_hq2r4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-visible = false
 position = Vector2(1, -6)
-sprite_frames = SubResource("SpriteFrames_1esws")
 autoplay = "default"
 
 [node name="PointLight2D" type="PointLight2D" parent="."]

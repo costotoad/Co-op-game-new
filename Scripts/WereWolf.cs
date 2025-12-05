@@ -17,10 +17,11 @@ public partial class WereWolf : CharacterBody2D
 	public override void _PhysicsProcess(double delta)
 	{
 		Vector2 velocity = Velocity;
-
 		
+		get_joy_info(device: 0);
 		
-		Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
+		Vector2 direction = get_joy_axis(device: 0,)
+		
 		
 
 		// Get the input direction and handle the movement/deceleration.

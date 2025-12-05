@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bs5b2r5t3a01c"]
+[gd_scene load_steps=8 format=3 uid="uid://bs5b2r5t3a01c"]
 
 [ext_resource type="Texture2D" uid="uid://djfswf65nn2kr" path="res://Assets/grass place holder.png" id="1_jjvhh"]
 [ext_resource type="PackedScene" path="res://Scenes/bush.tscn" id="4_6bp64"]
@@ -7,9 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://wco28vbu84lu" path="res://Scenes/were_wolf.tscn" id="7_0yv2s"]
 [ext_resource type="PackedScene" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" path="res://Scenes/redwood.tscn" id="8_hptm8"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_s56wg"]
-size = Vector2(2001, 67.0722)
 
 [node name="Main" type="Node2D"]
 
@@ -230,35 +227,4 @@ position = Vector2(-207, -102)
 position = Vector2(-93, -51)
 
 [node name="WereWolf" parent="." instance=ExtResource("7_0yv2s")]
-position = Vector2(21, -55)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-22.5, 592.5)
-shape = SubResource("RectangleShape2D_s56wg")
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2(1004, -57)
-rotation = -1.58478
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(-1.52588e-05, 6.10352e-05)
-shape = SubResource("RectangleShape2D_s56wg")
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="StaticBody2D2"]
-position = Vector2(1004, -57)
-rotation = -1.58478
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2/StaticBody2D2"]
-position = Vector2(1959.7, -642.542)
-rotation = 1.6067
-shape = SubResource("RectangleShape2D_s56wg")
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
-position = Vector2(0, 23)
-rotation = 3.14154
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2(-22.5, 592.5)
-shape = SubResource("RectangleShape2D_s56wg")
+position = Vector2(24, -55)
