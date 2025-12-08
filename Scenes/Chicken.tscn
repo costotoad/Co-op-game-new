@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://2502jjuyi0yq"]
+
+[ext_resource type="Texture2D" uid="uid://hnmqe0ilxlhg" path="res://Assets/food.png" id="1_3mj6s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ebwv"]
+atlas = ExtResource("1_3mj6s")
+region = Rect2(0, 0, 33, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8r0fw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ebwv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3f20t"]
+radius = 4.833
+height = 22.8945
+
+[node name="Chicken" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+rotation = -0.272571
+sprite_frames = SubResource("SpriteFrames_8r0fw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(14.0031, 11.2256)
+rotation = -0.0202952
+shape = SubResource("CapsuleShape2D_3f20t")
