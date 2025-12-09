@@ -49,19 +49,16 @@ public partial class Player : CharacterBody2D
 
 		Visible = Velocity.Length() > 0.1f;
 
-		// Flashlight fix
 		FlashlightAngleOffsetDeg = -90;
 		flashlight.Rotation = Velocity.Angle() + Mathf.DegToRad(FlashlightAngleOffsetDeg);
-		
+
 		if (Mathf.Abs(Velocity.X) > Mathf.Abs(Velocity.Y))
 		{
-			// Horizontal movement
 			anim.Play("SideWalk");
 			anim.FlipH = Velocity.X < 0;
 		}
 		else
 		{
-			// Vertical movement
 			if (Velocity.Y < 0)
 				anim.Play("UpWalk");
 			else

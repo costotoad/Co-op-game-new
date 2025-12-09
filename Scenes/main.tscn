@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://c52si30ays5pu" path="res://Scenes/Player.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Scenes/bush_orange.tscn" id="5_21xkr"]
-[ext_resource type="Script" path="res://Scripts/WereWolf.cs" id="7_6bp64"]
+[ext_resource type="Script" uid="uid://drwjkjdpkq84" path="res://Scripts/WereWolf.cs" id="7_6bp64"]
 [ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
-[ext_resource type="PackedScene" uid="uid://wco28vbu84lu" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
+[ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
 [ext_resource type="AudioStream" uid="uid://cfi3krnqtqfqo" path="res://Assets/sounds-of-a-storm-with-wind-and-thunder-375923.mp3" id="8_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://2502jjuyi0yq" path="res://Scenes/Chicken.tscn" id="9_ynf5e"]
 
@@ -285,9 +285,19 @@ autoplay = true
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 
 [node name="Chickens" type="Node2D" parent="."]
+visible = false
 
 [node name="Chicken" parent="Chickens" instance=ExtResource("9_ynf5e")]
 position = Vector2(-437, 411)
+
+[node name="Chicken8" parent="Chickens" instance=ExtResource("9_ynf5e")]
+position = Vector2(-228, 166)
+
+[node name="Chicken9" parent="Chickens" instance=ExtResource("9_ynf5e")]
+position = Vector2(475, 93)
+
+[node name="Chicken10" parent="Chickens" instance=ExtResource("9_ynf5e")]
+position = Vector2(-454, 22)
 
 [node name="Chicken2" parent="Chickens" instance=ExtResource("9_ynf5e")]
 position = Vector2(678, -444)
