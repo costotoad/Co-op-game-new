@@ -1,46 +1,10 @@
-[gd_scene load_steps=22 format=3 uid="uid://wco28vbu84lu"]
+[gd_scene load_steps=40 format=3 uid="uid://byo72bhhqc2cm"]
 
-[ext_resource type="Texture2D" uid="uid://cqwlu5fttfsmy" path="res://Assets/werewolf-removebg-preview.png" id="1_15cbp"]
-[ext_resource type="Script" uid="uid://cmdh5fnywstf2" path="res://Scripts/WereWolf.cs" id="1_tq65y"]
-[ext_resource type="Texture2D" uid="uid://c7k5hc5a50scg" path="res://Assets/Light Circle.png" id="3_aa2x6"]
-[ext_resource type="Script" uid="uid://d2v3noibwat4y" path="res://Scripts/Killzone.cs" id="4_67aks"]
-[ext_resource type="Script" uid="uid://c1rj84yqhxc04" path="res://Scripts/wolf_body.cs" id="5_ej3ap"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_67aks"]
-radius = 69.0
-height = 138.0
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tq65y"]
-atlas = ExtResource("1_15cbp")
-region = Rect2(0, 0, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aa2x6"]
-atlas = ExtResource("1_15cbp")
-region = Rect2(48, 0, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_67aks"]
-atlas = ExtResource("1_15cbp")
-region = Rect2(96, 0, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1epm0"]
-atlas = ExtResource("1_15cbp")
-region = Rect2(48, 128, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ej3ap"]
-atlas = ExtResource("1_15cbp")
-region = Rect2(0, 128, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5osyv"]
-atlas = ExtResource("1_15cbp")
-region = Rect2(96, 128, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7ak2q"]
-atlas = ExtResource("1_15cbp")
-region = Rect2(48, 192, 48, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fhhqw"]
-atlas = ExtResource("1_15cbp")
-region = Rect2(0, 192, 48, 64)
+[ext_resource type="Texture2D" uid="uid://bopyr67sucew5" path="res://Assets/pixil-frame-0 (3).png" id="1_ej3ap"]
+[ext_resource type="Texture2D" uid="uid://4qj6xpchi2i3" path="res://Assets/Back_walk.png" id="2_1epm0"]
+[ext_resource type="Texture2D" uid="uid://c1dexvhmf8v3u" path="res://Assets/front_walk.png" id="3_5osyv"]
+[ext_resource type="Texture2D" uid="uid://bwubkkf0p8ct6" path="res://Assets/side_walk.png" id="4_7ak2q"]
+[ext_resource type="Texture2D" uid="uid://battgykk2boni" path="res://Assets/Side face.png" id="5_fhhqw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u1bdw"]
 atlas = ExtResource("1_15cbp")
