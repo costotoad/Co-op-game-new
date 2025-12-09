@@ -1,11 +1,11 @@
 using Godot;
 using System;
 
-public partial class Area2d : Area2D{
+public partial class candle : Area2D{
 	private AnimatedSprite2D player_sprite;
 	override public void _Ready()
 {
-	player_sprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+	player_sprite = GetNode<AnimatedSprite2D>("Candle7");
 }
 public void OnBodyEntered(Node2D body)
 {

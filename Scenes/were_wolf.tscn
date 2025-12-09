@@ -142,8 +142,8 @@ script = ExtResource("4_67aks")
 position = Vector2(15, 0)
 shape = SubResource("CapsuleShape2D_67aks")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -15)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="killzone"]
+position = Vector2(15, -15)
 sprite_frames = SubResource("SpriteFrames_sdvmb")
 animation = &"Forward Walk"
 autoplay = "Forward Walk"
@@ -158,6 +158,12 @@ shape = SubResource("CapsuleShape2D_ej3ap")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -9)
 shape = SubResource("CapsuleShape2D_1epm0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -15)
+sprite_frames = SubResource("SpriteFrames_sdvmb")
+animation = &"Forward Walk"
+autoplay = "Forward Walk"
 
 [connection signal="body_entered" from="killzone" to="killzone" method="OnBodyEntered"]
 [connection signal="body_exited" from="killzone" to="killzone" method="OnBodyExited"]
