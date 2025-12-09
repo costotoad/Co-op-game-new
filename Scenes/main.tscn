@@ -1,16 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://c1ticlkbjsb7i"]
+[gd_scene load_steps=14 format=3 uid="uid://c1ticlkbjsb7i"]
 
-[ext_resource type="Texture2D" uid="uid://c5551t20tvkie" path="res://Assets/grass place holder.png" id="1_jjvhh"]
-[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="2_kry3j"]
+[ext_resource type="Texture2D" uid="uid://kc61eyvu2du2" path="res://Assets/grass place holder.png" id="1_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://36dydts1aq7v" path="res://Scenes/ExamplePlayer.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" uid="uid://b2jrjse74j8g0" path="res://Scenes/snow_tree.tscn" id="4_kry3j"]
 [ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Assets/bush_orange.tscn" id="5_21xkr"]
 [ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
 [ext_resource type="PackedScene" uid="uid://bps3gtgwblcrw" path="res://Scenes/redwood.tscn" id="8_hptm8"]
-
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_344ge"]
-polygon = PackedVector2Array(-13, -46, 1, -46, 9, -38, 9, -26, 9, -16, 7, -14, 1, -10, -11, -10, -17, -16, -17, -22, -19, -34, -19, -40)
+[ext_resource type="Texture2D" uid="uid://c85rfwj82o3iq" path="res://Assets/Highkey Trash Title Screen.png" id="9_ynf5e"]
+[ext_resource type="Texture2D" uid="uid://7jfmdww6wo2o" path="res://Assets/startbutton.png" id="10_fdnlq"]
+[ext_resource type="Texture2D" uid="uid://b3qhdi0g5utip" path="res://Assets/quitbutton.png" id="11_jkdf5"]
+[ext_resource type="Texture2D" uid="uid://b3g0cb07ur3jx" path="res://Assets/A_button-removebg-preview.png" id="12_wsu2k"]
+[ext_resource type="Texture2D" uid="uid://2idrqwkwq0ys" path="res://Assets/image-removebg-preview.png" id="13_k12tt"]
 
 [node name="Main" type="Node2D"]
 
@@ -31,13 +33,9 @@ shadow_enabled = true
 color = Color(0.295867, 0.295866, 0.295866, 1)
 
 [node name="ExamplePlayer" parent="." instance=ExtResource("2_kry3j")]
-position = Vector2(24, -9)
+z_index = 4096
+position = Vector2(42, -42)
 scale = Vector2(2, 2)
-
-[node name="LightOccluder2D" type="LightOccluder2D" parent="ExamplePlayer"]
-position = Vector2(2.5, 15)
-scale = Vector2(0.5, 0.5)
-occluder = SubResource("OccluderPolygon2D_344ge")
 
 [node name="Nature Stuff" type="Node2D" parent="."]
 
@@ -220,3 +218,27 @@ position = Vector2(-836, 432)
 
 [node name="WereWolf" parent="." instance=ExtResource("8_344ge")]
 position = Vector2(86, -19)
+
+[node name="HighkeyTrashTitleScreen" type="Sprite2D" parent="."]
+position = Vector2(0.00012207, 5.00009)
+scale = Vector2(19.63, 11.12)
+texture = ExtResource("9_ynf5e")
+
+[node name="Startbutton" type="Sprite2D" parent="."]
+position = Vector2(2, 127)
+scale = Vector2(12.4375, 11.875)
+texture = ExtResource("10_fdnlq")
+
+[node name="Quitbutton" type="Sprite2D" parent="."]
+position = Vector2(0, 343.875)
+scale = Vector2(12.3906, 12.1406)
+texture = ExtResource("11_jkdf5")
+
+[node name="AButton-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(-316, 135)
+texture = ExtResource("12_wsu2k")
+
+[node name="Image-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(-314, 344)
+scale = Vector2(0.392, 0.386)
+texture = ExtResource("13_k12tt")
