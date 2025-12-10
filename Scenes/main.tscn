@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
 [ext_resource type="AudioStream" uid="uid://bfyumil3dsq6o" path="res://Assets/sounds-of-a-storm-with-wind-and-thunder-375923.mp3" id="8_ynf5e"]
-[ext_resource type="PackedScene" uid="uid://c6rntnly8678k" path="res://Scenes/menu.tscn" id="9_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://lfig3lakv5hw" path="res://Scenes/menu.tscn" id="9_ynf5e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6bp64"]
 size = Vector2(102, 1951)
