@@ -1,22 +1,15 @@
-[gd_scene load_steps=15 format=3 uid="uid://c1ticlkbjsb7i"]
+[gd_scene load_steps=9 format=3 uid="uid://c1ticlkbjsb7i"]
 
 [ext_resource type="Texture2D" uid="uid://kc61eyvu2du2" path="res://Assets/grass place holder.png" id="1_jjvhh"]
-[ext_resource type="Script" uid="uid://dthcjbd746v1e" path="res://Menu.cs" id="1_jkdf5"]
-[ext_resource type="PackedScene" uid="uid://36dydts1aq7v" path="res://Scenes/ExamplePlayer.tscn" id="2_kry3j"]
+[ext_resource type="PackedScene" uid="uid://c04o2rlv3fs11" path="res://Scenes/ExamplePlayer.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" uid="uid://b2jrjse74j8g0" path="res://Scenes/snow_tree.tscn" id="4_kry3j"]
-[ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Assets/bush_orange.tscn" id="5_21xkr"]
 [ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
 [ext_resource type="PackedScene" uid="uid://bps3gtgwblcrw" path="res://Scenes/redwood.tscn" id="8_hptm8"]
-[ext_resource type="Texture2D" uid="uid://c85rfwj82o3iq" path="res://Assets/Highkey Trash Title Screen.png" id="9_ynf5e"]
-[ext_resource type="Texture2D" uid="uid://7jfmdww6wo2o" path="res://Assets/startbutton.png" id="10_fdnlq"]
-[ext_resource type="Texture2D" uid="uid://b3qhdi0g5utip" path="res://Assets/quitbutton.png" id="11_jkdf5"]
-[ext_resource type="Texture2D" uid="uid://b3g0cb07ur3jx" path="res://Assets/A_button-removebg-preview.png" id="12_wsu2k"]
-[ext_resource type="Texture2D" uid="uid://2idrqwkwq0ys" path="res://Assets/image-removebg-preview.png" id="13_k12tt"]
+[ext_resource type="PackedScene" uid="uid://desuj6nbav053" path="res://Scenes/menu.tscn" id="8_ynf5e"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_jkdf5")
 
 [node name="GrassPlaceHolder" type="Sprite2D" parent="."]
 position = Vector2(-4, 5)
@@ -86,8 +79,18 @@ position = Vector2(-615, 414)
 [node name="Snow_Tree5" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
 position = Vector2(-873, 299)
 
-[node name="bush_orange" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(789, 35)
+script = null
 
 [node name="Snow_Tree7" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
 position = Vector2(-440, 414)
@@ -95,26 +98,96 @@ position = Vector2(-440, 414)
 [node name="Snow_Tree6" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
 position = Vector2(-539, 221)
 
-[node name="bush_orange2" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange2" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(686, 88)
+script = null
 
-[node name="bush_orange3" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange3" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(693, -13)
+script = null
 
-[node name="bush_orange4" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange4" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(778, 97)
+script = null
 
-[node name="bush_orange5" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange5" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(861, -57)
+script = null
 
-[node name="bush_orange6" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange6" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(743, -68)
+script = null
 
-[node name="bush_orange7" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange7" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(750, 97)
+script = null
 
-[node name="bush_orange8" parent="Nature Stuff" instance=ExtResource("5_21xkr")]
+[node name="bush_orange8" parent="Nature Stuff"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(759, 79)
+script = null
 
 [node name="pine_tree" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
 position = Vector2(-719, -51)
@@ -221,26 +294,4 @@ position = Vector2(-836, 432)
 [node name="WereWolf" parent="." instance=ExtResource("8_344ge")]
 position = Vector2(86, -19)
 
-[node name="HighkeyTrashTitleScreen" type="Sprite2D" parent="."]
-position = Vector2(0.00012207, 5.00009)
-scale = Vector2(19.63, 11.12)
-texture = ExtResource("9_ynf5e")
-
-[node name="Startbutton" type="Sprite2D" parent="."]
-position = Vector2(2, 127)
-scale = Vector2(12.4375, 11.875)
-texture = ExtResource("10_fdnlq")
-
-[node name="Quitbutton" type="Sprite2D" parent="."]
-position = Vector2(0, 343.875)
-scale = Vector2(12.3906, 12.1406)
-texture = ExtResource("11_jkdf5")
-
-[node name="AButton-removebg-preview" type="Sprite2D" parent="."]
-position = Vector2(-316, 135)
-texture = ExtResource("12_wsu2k")
-
-[node name="Image-removebg-preview" type="Sprite2D" parent="."]
-position = Vector2(-314, 344)
-scale = Vector2(0.392, 0.386)
-texture = ExtResource("13_k12tt")
+[node name="Menu" parent="." instance=ExtResource("8_ynf5e")]
