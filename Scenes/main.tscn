@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://c1ticlkbjsb7i"]
+[gd_scene load_steps=15 format=3 uid="uid://c1ticlkbjsb7i"]
 
 [ext_resource type="Texture2D" uid="uid://kc61eyvu2du2" path="res://Assets/grass place holder.png" id="1_jjvhh"]
+[ext_resource type="Script" uid="uid://dthcjbd746v1e" path="res://Menu.cs" id="1_jkdf5"]
 [ext_resource type="PackedScene" uid="uid://36dydts1aq7v" path="res://Scenes/ExamplePlayer.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" uid="uid://b2jrjse74j8g0" path="res://Scenes/snow_tree.tscn" id="4_kry3j"]
@@ -15,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://2idrqwkwq0ys" path="res://Assets/image-removebg-preview.png" id="13_k12tt"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_jkdf5")
 
 [node name="GrassPlaceHolder" type="Sprite2D" parent="."]
 position = Vector2(-4, 5)
