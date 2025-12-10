@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class candle : Area2D{
+public partial class Candle : Area2D{
 	private AnimatedSprite2D player_sprite;
 	override public void _Ready()
 {
