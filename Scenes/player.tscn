@@ -4,8 +4,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://c52si30ays5pu"]
 
 [ext_resource type="Script" uid="uid://dhdu65w3hsy08" path="res://Scripts/Player.cs" id="1_gntrk"]
-[ext_resource type="Texture2D" uid="uid://brdc0mqocw3h8" path="res://Assets/white-removebg-preview.png" id="2_dx3a6"]
-[ext_resource type="Texture2D" uid="uid://bf1yhv3mqp1ba" path="res://Assets/Characters_V3_Colour.png" id="3_gntrk"]
+[ext_resource type="Texture2D" uid="uid://djjs62dqti2dq" path="res://Assets/white-removebg-preview.png" id="2_dx3a6"]
+[ext_resource type="Texture2D" uid="uid://c1tasotey3lsd" path="res://Assets/Characters_V3_Colour.png" id="3_gntrk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dewec"]
 atlas = ExtResource("3_gntrk")
