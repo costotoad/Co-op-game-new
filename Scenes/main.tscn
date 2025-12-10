@@ -1,13 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://c1ticlkbjsb7i"]
+[gd_scene load_steps=11 format=3 uid="uid://c1ticlkbjsb7i"]
 
-[ext_resource type="Texture2D" uid="uid://bwq52qhejmtk7" path="res://Assets/grass place holder.png" id="1_jjvhh"]
-[ext_resource type="PackedScene" uid="uid://c52si30ays5pu" path="res://Scenes/Player.tscn" id="2_kry3j"]
+[ext_resource type="Texture2D" uid="uid://kc61eyvu2du2" path="res://Assets/grass place holder.png" id="1_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://c52si30ays5pu" path="res://Scenes/player.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
 [ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Scenes/bush_orange.tscn" id="5_21xkr"]
 [ext_resource type="Script" uid="uid://drwjkjdpkq84" path="res://Scripts/WereWolf.cs" id="7_6bp64"]
 [ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
-[ext_resource type="AudioStream" uid="uid://cfi3krnqtqfqo" path="res://Assets/sounds-of-a-storm-with-wind-and-thunder-375923.mp3" id="8_ynf5e"]
+[ext_resource type="AudioStream" uid="uid://bfyumil3dsq6o" path="res://Assets/sounds-of-a-storm-with-wind-and-thunder-375923.mp3" id="8_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://c6rntnly8678k" path="res://Scenes/menu.tscn" id="9_ynf5e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6bp64"]
 size = Vector2(102, 1951)
@@ -282,3 +283,5 @@ volume_db = 24.0
 autoplay = true
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+
+[node name="Menu" parent="." instance=ExtResource("9_ynf5e")]
