@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://lfig3lakv5hw"]
+
+[ext_resource type="Script" path="res://Scenes/Menu.cs" id="1_1rerr"]
+[ext_resource type="Texture2D" uid="uid://c85rfwj82o3iq" path="res://Assets/Highkey Trash Title Screen.png" id="2_xhh6f"]
+[ext_resource type="Texture2D" uid="uid://b3qhdi0g5utip" path="res://Assets/quitbutton.png" id="3_158mb"]
+[ext_resource type="Texture2D" uid="uid://7jfmdww6wo2o" path="res://Assets/startbutton.png" id="4_wwsa2"]
+
+[node name="Menu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_1rerr")
+
+[node name="HighkeyTrashTitleScreen" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(958, 522)
+scale = Vector2(19.57, 10.72)
+texture = ExtResource("2_xhh6f")
+
+[node name="Quitbutton" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(998, 739)
+scale = Vector2(10, 10)
+texture = ExtResource("3_158mb")
+
+[node name="Startbutton" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1002, 907)
+scale = Vector2(10, 10)
+texture = ExtResource("4_wwsa2")
