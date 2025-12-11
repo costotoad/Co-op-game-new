@@ -67,4 +67,8 @@ public partial class Player : CharacterBody2D
 			anim.FlipH = false;
 		}
 	}
+	
+	private void BodyEntered(Node2D body) {
+		body.Visible=true;
+	}
 }

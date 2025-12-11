@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://2502jjuyi0yq"]
+[gd_scene load_steps=5 format=3 uid="uid://2502jjuyi0yq"]
 
 [ext_resource type="Texture2D" uid="uid://hnmqe0ilxlhg" path="res://Assets/food.png" id="1_3mj6s"]
-[ext_resource type="Script" uid="uid://d2ajj1nvvk25w" path="res://Scenes/Chicken.cs" id="1_ixs66"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0ebwv"]
 atlas = ExtResource("1_3mj6s")
@@ -23,10 +22,10 @@ radius = 4.833
 height = 22.8945
 
 [node name="Chicken" type="CharacterBody2D"]
-script = ExtResource("1_ixs66")
+collision_layer = 2
+collision_mask = 0
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
-visible = false
 rotation = -0.272571
 sprite_frames = SubResource("SpriteFrames_8r0fw")
 

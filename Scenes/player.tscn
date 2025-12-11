@@ -94,7 +94,12 @@ texture = ExtResource("2_dx3a6")
 offset = Vector2(0, 180)
 
 [node name="Area2D" type="Area2D" parent="flashlight"]
+collision_layer = 0
+collision_mask = 2
 
 [node name="CollisionShape2D2" type="CollisionPolygon2D" parent="flashlight/Area2D"]
 position = Vector2(0.726304, 36.3587)
 polygon = PackedVector2Array(-1.17707, 0.424335, 8.26956, 2.67197, 25.7093, 28.4536, 115.814, 182.879, 180.85, 299.227, 178.307, 302.4, 173.22, 303.722, -162.987, 305.023, -174.417, 303.743, -181.012, 299.264, -181.891, 296.864, -60.9497, 85.5038, -14.9873, 9.44145, -6.59421, 1.58798)
+
+[connection signal="body_entered" from="flashlight/Area2D" to="." method="BodyEntered"]
+[connection signal="body_exited" from="flashlight/Area2D" to="." method="BodyExited"]
