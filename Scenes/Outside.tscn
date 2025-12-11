@@ -1,0 +1,350 @@
+[gd_scene load_steps=9 format=3 uid="uid://bs5b2r5t3a01c"]
+
+[ext_resource type="Texture2D" uid="uid://bwq52qhejmtk7" path="res://Assets/grass place holder.png" id="1_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://c52si30ays5pu" path="res://Scenes/Player.tscn" id="2_kry3j"]
+[ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
+[ext_resource type="PackedScene" uid="uid://cvcnw1n6ijae7" path="res://Scenes/bush_orange.tscn" id="5_21xkr"]
+[ext_resource type="Script" uid="uid://drwjkjdpkq84" path="res://Scripts/WereWolf.cs" id="7_6bp64"]
+[ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_344ge"]
+[ext_resource type="AudioStream" uid="uid://cfi3krnqtqfqo" path="res://Assets/sounds-of-a-storm-with-wind-and-thunder-375923.mp3" id="8_ynf5e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bp64"]
+size = Vector2(102, 1951)
+
+[node name="Main" type="Node2D"]
+
+[node name="Players" type="Node2D" parent="."]
+visibility_layer = 3
+
+[node name="Player" parent="Players" instance=ExtResource("2_kry3j")]
+position = Vector2(-876, -488)
+scale = Vector2(1.56948, 1.62213)
+
+[node name="Player2" parent="Players" instance=ExtResource("2_kry3j")]
+position = Vector2(-888, -71)
+scale = Vector2(1.56948, 1.62213)
+ControllerId = 1
+
+[node name="Player3" parent="Players" instance=ExtResource("2_kry3j")]
+position = Vector2(-890, 370)
+scale = Vector2(1.56948, 1.62213)
+ControllerId = 2
+
+[node name="GrassPlaceHolder" type="Sprite2D" parent="."]
+position = Vector2(-4, 5)
+scale = Vector2(19.61, 11.12)
+texture = ExtResource("1_jjvhh")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+ignore_rotation = false
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+position = Vector2(-24.5, -93)
+scale = Vector2(0.5, 0.5)
+energy = 0.1
+shadow_enabled = true
+
+[node name="CanvasModulate" type="CanvasModulate" parent="DirectionalLight2D"]
+color = Color(0, 0, 0, 1)
+
+[node name="Nature Stuff" type="Node2D" parent="."]
+
+[node name="Bush11" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(608, -456)
+
+[node name="Bush10" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(699, -209)
+
+[node name="Bush9" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(403, -404)
+
+[node name="Bush8" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(405, -226)
+
+[node name="Bush19" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(322, -108)
+
+[node name="Bush7" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(175, -455)
+
+[node name="Bush6" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(157, -212)
+
+[node name="Bush18" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(306, 48)
+
+[node name="Bush5" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(-53, -291)
+
+[node name="Bush4" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(-314, -118)
+
+[node name="Bush20" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(70, -99)
+
+[node name="Bush3" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(-296, -354)
+
+[node name="Bush2" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(-529, -212)
+
+[node name="Bush" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(-678, -296)
+
+[node name="bush_orange" parent="Bushes" instance=ExtResource("5_21xkr")]
+position = Vector2(255, 403)
+
+[node name="Snow_Tree3" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-805, 190)
+
+[node name="Snow_Tree4" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-615, 414)
+
+[node name="Snow_Tree5" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-873, 299)
+
+[node name="Snow_Tree7" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-440, 414)
+
+[node name="Snow_Tree6" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-539, 221)
+
+[node name="pine_tree" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-719, -51)
+
+[node name="bush_orange13" parent="Bushes" instance=ExtResource("5_21xkr")]
+position = Vector2(96, 22)
+
+[node name="bush_orange6" parent="Bushes" instance=ExtResource("5_21xkr")]
+position = Vector2(-733, -159)
+
+[node name="bush_orange7" parent="Bushes" instance=ExtResource("5_21xkr")]
+position = Vector2(-785, 281)
+
+[node name="bush_orange8" parent="Bushes" instance=ExtResource("5_21xkr")]
+position = Vector2(-631, 87)
+
+[node name="Bush12" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(97, -318)
+
+[node name="Bush13" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(-67, -435)
+
+[node name="Bush14" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(331, -459)
+
+[node name="Bush15" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(458, -323)
+
+[node name="Bush16" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(-487, -443)
+
+[node name="Bush17" parent="Bushes" instance=ExtResource("4_6bp64")]
+position = Vector2(-291, 64)
+
+[node name="Trees" type="Node2D" parent="."]
+
+[node name="pine_tree4" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(838, 218)
+
+[node name="pine_tree6" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(565, 181)
+
+[node name="pine_tree7" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(436, 408)
+
+[node name="pine_tree8" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(831, 413)
+
+[node name="pine_tree9" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(452, -17)
+
+[node name="pine_tree5" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(380, 219)
+
+[node name="pine_tree10" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(619, 413)
+
+[node name="pine_tree11" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(706, 238)
+
+[node name="pine_tree12" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-789, 405)
+
+[node name="pine_tree" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-719, -51)
+
+[node name="pine_tree2" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-540, -23)
+
+[node name="pine_tree13" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-799, -377)
+
+[node name="pine_tree14" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-382, -375)
+
+[node name="pine_tree15" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-847, 92)
+
+[node name="pine_tree16" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-640, 215)
+
+[node name="pine_tree17" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-362, 149)
+
+[node name="pine_tree18" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-480, 331)
+
+[node name="pine_tree19" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-143, 74)
+
+[node name="pine_tree20" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-263, 296)
+
+[node name="pine_tree21" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-77, 249)
+
+[node name="pine_tree22" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(140, 141)
+
+[node name="pine_tree27" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(209, -94)
+
+[node name="pine_tree23" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(274, -330)
+
+[node name="pine_tree24" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(585, -239)
+
+[node name="pine_tree25" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-154, -205)
+
+[node name="pine_tree26" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(389, 450)
+
+[node name="pine_tree3" parent="Trees" instance=ExtResource("7_ynf5e")]
+position = Vector2(-418, -60)
+
+[node name="Bush18" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(773, 15)
+
+[node name="Bush19" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(619, 60)
+
+[node name="Bush20" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(664, -38)
+
+[node name="Bush21" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(448, -32)
+
+[node name="Bush22" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(585, -113)
+
+[node name="Bush23" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(322, -117)
+
+[node name="Bush24" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(277, 70)
+
+[node name="Bush25" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(185, -50)
+
+[node name="pine_tree13" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(73, -31)
+
+[node name="pine_tree14" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-57, -190)
+
+[node name="pine_tree15" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-609, -150)
+
+[node name="pine_tree16" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-387, -223)
+
+[node name="pine_tree17" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-126, 30)
+
+[node name="pine_tree18" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-207, -102)
+
+[node name="ExamplePlayer1" parent="." instance=ExtResource("6_s56wg")]
+position = Vector2(-93, -51)
+
+[node name="WereWolf" parent="." instance=ExtResource("7_0yv2s")]
+position = Vector2(21, -55)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-22.5, 592.5)
+shape = SubResource("RectangleShape2D_s56wg")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(1004, -57)
+rotation = -1.58478
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-1.52588e-05, 6.10352e-05)
+shape = SubResource("RectangleShape2D_s56wg")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="StaticBody2D2"]
+position = Vector2(1004, -57)
+rotation = -1.58478
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2/StaticBody2D2"]
+position = Vector2(1959.7, -642.542)
+rotation = 1.6067
+shape = SubResource("RectangleShape2D_s56wg")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(0, 23)
+rotation = 3.14154
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(-22.5, 592.5)
+shape = SubResource("RectangleShape2D_s56wg")
+[node name="WereWolf" parent="." instance=ExtResource("8_344ge")]
+position = Vector2(848, -14)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("7_6bp64")
+
+[node name="WorldBarriers" type="Node" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="WorldBarriers"]
+position = Vector2(-1067, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBarriers/StaticBody2D"]
+position = Vector2(61, 1)
+shape = SubResource("RectangleShape2D_6bp64")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="WorldBarriers"]
+position = Vector2(-1067, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBarriers/StaticBody2D2"]
+position = Vector2(2079, -4)
+shape = SubResource("RectangleShape2D_6bp64")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="WorldBarriers"]
+position = Vector2(-1067, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBarriers/StaticBody2D3"]
+position = Vector2(1073.5, -582)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_6bp64")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="WorldBarriers"]
+position = Vector2(-1067, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBarriers/StaticBody2D4"]
+position = Vector2(1075, 592)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_6bp64")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_ynf5e")
+volume_db = 24.0
+autoplay = true
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
