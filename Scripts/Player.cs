@@ -1,4 +1,5 @@
 using Godot;
+using System.Threading.Tasks;
 
 public partial class Player : CharacterBody2D
 {
@@ -12,6 +13,9 @@ public partial class Player : CharacterBody2D
 
 	private PointLight2D flashlight;
 	private AnimatedSprite2D anim;
+
+	private bool _canMove = true;
+	private bool _isDead = false; // Track death state
 
 	public override void _Ready()
 	{
@@ -34,6 +38,13 @@ public partial class Player : CharacterBody2D
 
 	public override void _PhysicsProcess(double delta)
 	{
+		if (!_canMove || _isDead)
+		{
+			Velocity = Vector2.Zero;
+			MoveAndSlide();
+			return;
+		}
+
 		float rawX = Input.GetJoyAxis(ControllerId, JoyAxis.LeftX);
 		float rawY = Input.GetJoyAxis(ControllerId, JoyAxis.LeftY);
 
@@ -67,8 +78,41 @@ public partial class Player : CharacterBody2D
 			anim.FlipH = false;
 		}
 	}
-	
-	private void BodyEntered(Node2D body) {
-		body.Visible=true;
+
+	private void BodyEntered(Node2D body)
+	{
+		body.Visible = true;
+	}
+
+	private async void FreezeFor3Seconds()
+	{
+		if (!_canMove) return;
+
+		_canMove = false;
+
+		await ToSignal(GetTree().CreateTimer(3.0), "timeout");
+
+		_canMove = true;
+	}
+
+	// ===== Die Method =====
+	public async void Die()
+	{
+		if (_isDead) return;
+		_isDead = true;
+
+		_canMove = false;             // Stop movement
+		var collision = GetNode<CollisionShape2D>("CollisionShape2D");
+		if (collision != null)
+			collision.Disabled = true;     // Disable collisions
+
+		// Fade out over 1 second
+		for (float t = 1f; t >= 0; t -= 0.05f)
+		{
+			Modulate = new Color(1, 1, 1, t);
+			await ToSignal(GetTree().CreateTimer(0.05f), "timeout");
+		}
+
+		QueueFree();                  // Finally remove the player
 	}
 }
