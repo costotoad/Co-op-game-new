@@ -1,0 +1,322 @@
+[gd_scene load_steps=9 format=3 uid="uid://bjy3eea6hs01a"]
+
+[ext_resource type="Texture2D" uid="uid://hduu4uf6pb87" path="res://Assets/grass place holder.png" id="1_5ukr8"]
+[ext_resource type="Script" uid="uid://blmayf27wg1iw" path="res://Scripts/World.cs" id="1_o06y3"]
+[ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="2_o06y3"]
+[ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="4_5v1tr"]
+[ext_resource type="PackedScene" uid="uid://drtnmxngoa0ao" path="res://Scenes/player.tscn" id="6_ikia7"]
+[ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_k7acu"]
+[ext_resource type="Script" uid="uid://dhdu65w3hsy08" path="res://Scripts/Player.cs" id="9_5v1tr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bp64"]
+size = Vector2(102, 1951)
+
+[node name="World1" type="Node2D" node_paths=PackedStringArray("player1", "player2", "player3", "werewolf", "camera")]
+script = ExtResource("1_o06y3")
+player1 = NodePath("Player1")
+player2 = NodePath("Player2")
+player3 = NodePath("Player3")
+werewolf = NodePath("WereWolf")
+camera = NodePath("Camera2D")
+
+[node name="GrassPlaceHolder" type="Sprite2D" parent="."]
+position = Vector2(-4, 5)
+scale = Vector2(19.61, 11.12)
+texture = ExtResource("1_5ukr8")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+position = Vector2(-24.5, -93)
+scale = Vector2(0.5, 0.5)
+energy = 0.1
+shadow_enabled = true
+
+[node name="CanvasModulate" type="CanvasModulate" parent="DirectionalLight2D"]
+color = Color(0, 0, 0, 1)
+
+[node name="Bushes" type="Node2D" parent="."]
+
+[node name="Bush11" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(608, -456)
+
+[node name="Bush10" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(699, -209)
+
+[node name="Bush9" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(403, -404)
+
+[node name="Bush8" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(405, -226)
+
+[node name="Bush19" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(322, -108)
+
+[node name="Bush7" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(175, -455)
+
+[node name="Bush6" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(157, -212)
+
+[node name="Bush18" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(306, 48)
+
+[node name="Bush5" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-53, -291)
+
+[node name="Bush4" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-314, -118)
+
+[node name="Bush20" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(70, -99)
+
+[node name="Bush3" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-296, -354)
+
+[node name="Bush2" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-529, -212)
+
+[node name="Bush" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-678, -296)
+
+[node name="Bush12" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(97, -318)
+
+[node name="Bush13" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-67, -435)
+
+[node name="Bush14" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(331, -459)
+
+[node name="Bush15" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(458, -323)
+
+[node name="Bush16" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-487, -443)
+
+[node name="Bush17" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-291, 64)
+
+[node name="Bush21" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-114, 410)
+
+[node name="Bush22" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(234, 277)
+
+[node name="Bush23" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(138, 425)
+
+[node name="Bush24" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(50, 242)
+
+[node name="Bush25" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-215, 217)
+
+[node name="Bush26" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-516, 227)
+
+[node name="Bush27" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-676, 70)
+
+[node name="Bush28" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-461, 109)
+
+[node name="Bush29" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-813, -166)
+
+[node name="Bush30" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-334, -234)
+
+[node name="Bush31" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(88, 70)
+
+[node name="Bush32" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-85, -64)
+
+[node name="Bush33" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-38, 132)
+
+[node name="Bush34" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-597, 407)
+
+[node name="Bush35" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(520, 314)
+
+[node name="Bush36" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(666, 97)
+
+[node name="Bush37" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(562, -91)
+
+[node name="Bush38" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(856, 47)
+
+[node name="Bush39" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(833, -136)
+
+[node name="Bush40" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(747, -339)
+
+[node name="Bush41" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(608, -345)
+
+[node name="Bush42" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-247, -445)
+
+[node name="Bush43" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-156, -325)
+
+[node name="Bush44" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-508, -337)
+
+[node name="Bush45" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-653, -471)
+
+[node name="Bush46" parent="Bushes" instance=ExtResource("2_o06y3")]
+position = Vector2(-657, -133)
+
+[node name="Trees" type="Node2D" parent="."]
+
+[node name="pine_tree4" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(838, 218)
+
+[node name="pine_tree6" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(565, 181)
+
+[node name="pine_tree7" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(436, 408)
+
+[node name="pine_tree8" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(831, 413)
+
+[node name="pine_tree9" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(452, -17)
+
+[node name="pine_tree5" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(380, 219)
+
+[node name="pine_tree10" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(619, 413)
+
+[node name="pine_tree11" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(706, 238)
+
+[node name="pine_tree12" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-789, 405)
+
+[node name="pine_tree" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-719, -51)
+
+[node name="pine_tree2" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-540, -23)
+
+[node name="pine_tree13" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-799, -377)
+
+[node name="pine_tree14" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-382, -375)
+
+[node name="pine_tree15" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-847, 92)
+
+[node name="pine_tree16" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-640, 215)
+
+[node name="pine_tree17" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-362, 149)
+
+[node name="pine_tree18" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-480, 331)
+
+[node name="pine_tree19" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-143, 74)
+
+[node name="pine_tree20" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-263, 296)
+
+[node name="pine_tree21" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-77, 249)
+
+[node name="pine_tree22" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(140, 141)
+
+[node name="pine_tree27" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(209, -94)
+
+[node name="pine_tree23" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(274, -330)
+
+[node name="pine_tree24" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(585, -239)
+
+[node name="pine_tree25" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-154, -205)
+
+[node name="pine_tree26" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(389, 450)
+
+[node name="pine_tree3" parent="Trees" instance=ExtResource("4_5v1tr")]
+position = Vector2(-418, -60)
+
+[node name="WorldBarriers" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="WorldBarriers"]
+position = Vector2(-1067, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBarriers/StaticBody2D"]
+position = Vector2(61, 1)
+shape = SubResource("RectangleShape2D_6bp64")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="WorldBarriers"]
+position = Vector2(-1067, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBarriers/StaticBody2D2"]
+position = Vector2(2079, -4)
+shape = SubResource("RectangleShape2D_6bp64")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="WorldBarriers"]
+position = Vector2(-1067, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBarriers/StaticBody2D3"]
+position = Vector2(1073.5, -582)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_6bp64")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="WorldBarriers"]
+position = Vector2(-1067, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBarriers/StaticBody2D4"]
+position = Vector2(1075, 592)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_6bp64")
+
+[node name="Player1" parent="." instance=ExtResource("6_ikia7")]
+position = Vector2(-876, -488)
+scale = Vector2(1.56948, 1.62213)
+collision_mask = 13
+
+[node name="Player2" parent="." instance=ExtResource("6_ikia7")]
+position = Vector2(-895, -81)
+scale = Vector2(1.56948, 1.62213)
+collision_mask = 13
+ControllerId = 1
+
+[node name="Player3" parent="." instance=ExtResource("6_ikia7")]
+position = Vector2(-898, 305)
+scale = Vector2(1.56948, 1.62213)
+collision_mask = 13
+ControllerId = 2
+
+[node name="WereWolf" parent="." instance=ExtResource("8_k7acu")]
+position = Vector2(746, -4)
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("9_5v1tr")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-876, -488)
+scale = Vector2(1, 0.999999)
+ignore_rotation = false
+limit_left = -965
+limit_top = -540
+limit_right = 970
+limit_bottom = 540
+editor_draw_limits = true
