@@ -13,18 +13,18 @@ public partial class Killzone : Area2D
 	public void OnBodyEntered(Node2D body)
 	{
 		GD.Print("in the zone");
-		if (body is ExamplePlayer)
+		if (body is Player)
 		{
-			((ExamplePlayer) body).MakeVisible();
+			((Player) body).Visible = true;
 		}
 	}
 
 	public void OnBodyExited(Node2D body)
 	{
 		GD.Print("out of the zone");
-		if (body is ExamplePlayer)
+		if (body is Player)
 		{
-			((ExamplePlayer) body).MakeInvisible();
+			((Player) body).Visible = false;
 		}
 	}
 }

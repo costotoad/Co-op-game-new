@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="Multiplayer Project"
-run/main_scene="uid://wab6noht700v"
+run/main_scene="uid://b8at0skdemixg"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
+config/icon="res://Art/icon.svg"
 
 [display]
 
@@ -53,6 +54,8 @@ p1_up={
 p1_down={
 "deadzone": 0.2,
 "events": [Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":1,"axis_value":1.0,"script":null)
+]
+}
 start={
 "deadzone": 0.2,
 "events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":0,"pressure":0.0,"pressed":true,"script":null)
