@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://bjy3eea6hs01a"]
 
-[ext_resource type="Texture2D" uid="uid://hduu4uf6pb87" path="res://Assets/grass place holder.png" id="1_5ukr8"]
+[ext_resource type="Texture2D" uid="uid://bwq52qhejmtk7" path="res://Assets/grass place holder.png" id="1_5ukr8"]
 [ext_resource type="Script" uid="uid://blmayf27wg1iw" path="res://Scripts/World.cs" id="1_o06y3"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="2_o06y3"]
 [ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="4_5v1tr"]

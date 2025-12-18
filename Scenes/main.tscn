@@ -1,3 +1,219 @@
-[gd_scene format=3 uid="uid://b8at0skdemixg"]
+[gd_scene load_steps=8 format=3 uid="uid://b8at0skdemixg"]
+
+[ext_resource type="Texture2D" uid="uid://bwq52qhejmtk7" path="res://Assets/grass place holder.png" id="1_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="4_6bp64"]
+[ext_resource type="PackedScene" uid="uid://b2jrjse74j8g0" path="res://Scenes/snow_tree.tscn" id="4_kry3j"]
+[ext_resource type="PackedScene" path="res://Scenes/ExamplePlayer1.tscn" id="6_s56wg"]
+[ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="7_0yv2s"]
+[ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="7_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://bps3gtgwblcrw" path="res://Scenes/redwood.tscn" id="8_hptm8"]
 
 [node name="Main" type="Node2D"]
+
+[node name="GrassPlaceHolder" type="Sprite2D" parent="."]
+position = Vector2(-4, 5)
+scale = Vector2(19.61, 11.12)
+texture = ExtResource("1_jjvhh")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+position = Vector2(-24.5, -93)
+scale = Vector2(0.5, 0.5)
+energy = 0.1
+shadow_enabled = true
+
+[node name="CanvasModulate" type="CanvasModulate" parent="DirectionalLight2D"]
+color = Color(0.295867, 0.295866, 0.295866, 1)
+
+[node name="Nature Stuff" type="Node2D" parent="."]
+
+[node name="Bush11" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(608, -456)
+
+[node name="Bush10" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(699, -209)
+
+[node name="Bush9" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(403, -404)
+
+[node name="Bush8" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(405, -226)
+
+[node name="Bush7" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(175, -455)
+
+[node name="Bush6" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(157, -212)
+
+[node name="Bush5" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(-53, -291)
+
+[node name="Bush4" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(-314, -118)
+
+[node name="Bush3" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(-296, -354)
+
+[node name="Bush2" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(-529, -212)
+
+[node name="Bush" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(-678, -296)
+
+[node name="Snow_Tree2" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-672, 293)
+
+[node name="Snow_Tree3" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-805, 190)
+
+[node name="Snow_Tree4" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-615, 414)
+
+[node name="Snow_Tree5" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-873, 299)
+
+[node name="Snow_Tree7" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-440, 414)
+
+[node name="Snow_Tree6" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-539, 221)
+
+[node name="pine_tree" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-719, -51)
+
+[node name="pine_tree2" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-540, -23)
+
+[node name="pine_tree3" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-418, -60)
+
+[node name="pine_tree4" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(838, 218)
+
+[node name="pine_tree6" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(588, 202)
+
+[node name="pine_tree7" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(436, 408)
+
+[node name="pine_tree8" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(831, 413)
+
+[node name="pine_tree9" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(478, 61)
+
+[node name="pine_tree5" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(380, 219)
+
+[node name="pine_tree10" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(619, 413)
+
+[node name="pine_tree11" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(706, 238)
+
+[node name="pine_tree12" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(495, 257)
+
+[node name="redwood" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(-226, 122)
+
+[node name="redwood2" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(-295, 319)
+
+[node name="redwood3" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(-130, 274)
+
+[node name="redwood4" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(-59, 146)
+
+[node name="redwood5" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(-40, 285)
+
+[node name="redwood6" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(151, 139)
+
+[node name="redwood7" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(55, 88)
+
+[node name="redwood8" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(239, 392)
+
+[node name="redwood9" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(82, 377)
+
+[node name="redwood10" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(192, 249)
+
+[node name="redwood11" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(85, 246)
+
+[node name="redwood12" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(-226, 448)
+
+[node name="redwood13" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(-104, 467)
+
+[node name="redwood14" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(150, 464)
+
+[node name="redwood15" parent="Nature Stuff" instance=ExtResource("8_hptm8")]
+position = Vector2(-11, 463)
+
+[node name="Bush12" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(97, -318)
+
+[node name="Bush13" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(-67, -435)
+
+[node name="Bush14" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(331, -459)
+
+[node name="Bush15" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(458, -323)
+
+[node name="Bush16" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(-487, -443)
+
+[node name="Bush17" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(-291, 64)
+
+[node name="Snow_Tree" parent="Nature Stuff" instance=ExtResource("4_kry3j")]
+position = Vector2(-836, 432)
+
+[node name="Bush18" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(773, 15)
+
+[node name="Bush19" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(619, 60)
+
+[node name="Bush20" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(664, -38)
+
+[node name="Bush21" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(448, -32)
+
+[node name="Bush22" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(585, -113)
+
+[node name="Bush23" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(322, -117)
+
+[node name="Bush24" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(277, 70)
+
+[node name="Bush25" parent="Nature Stuff" instance=ExtResource("4_6bp64")]
+position = Vector2(185, -50)
+
+[node name="pine_tree13" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(73, -31)
+
+[node name="pine_tree14" parent="Nature Stuff" instance=ExtResource("7_ynf5e")]
+position = Vector2(-57, -190)
+
+[node name="ExamplePlayer1" parent="." instance=ExtResource("6_s56wg")]
+position = Vector2(-93, -51)
+script = null
+
+[node name="WereWolf" parent="." instance=ExtResource("7_0yv2s")]
+position = Vector2(24, -55)
