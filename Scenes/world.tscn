@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://bjy3eea6hs01a"]
 
-[ext_resource type="Texture2D" uid="uid://hduu4uf6pb87" path="res://Assets/grass place holder.png" id="1_5ukr8"]
+[ext_resource type="Texture2D" uid="uid://bwq52qhejmtk7" path="res://Assets/grass place holder.png" id="1_5ukr8"]
 [ext_resource type="Script" uid="uid://blmayf27wg1iw" path="res://Scripts/World.cs" id="1_o06y3"]
 [ext_resource type="PackedScene" uid="uid://dojpcynbl8xe3" path="res://Scenes/bush.tscn" id="2_o06y3"]
 [ext_resource type="PackedScene" uid="uid://v3f7y76yteuc" path="res://Scenes/pine_tree.tscn" id="4_5v1tr"]
-[ext_resource type="PackedScene" uid="uid://drtnmxngoa0ao" path="res://Scenes/player.tscn" id="6_ikia7"]
+[ext_resource type="PackedScene" uid="uid://dxo8cgjro1s4c" path="res://Scenes/Player.tscn" id="6_ikia7"]
 [ext_resource type="PackedScene" uid="uid://byo72bhhqc2cm" path="res://Scenes/were_wolf.tscn" id="8_k7acu"]
 [ext_resource type="Script" uid="uid://dhdu65w3hsy08" path="res://Scripts/Player.cs" id="9_5v1tr"]
 
@@ -291,26 +291,23 @@ shape = SubResource("RectangleShape2D_6bp64")
 [node name="Player1" parent="." instance=ExtResource("6_ikia7")]
 position = Vector2(-876, -488)
 scale = Vector2(1.56948, 1.62213)
-collision_mask = 5
 
 [node name="Player2" parent="." instance=ExtResource("6_ikia7")]
 position = Vector2(-895, -81)
 scale = Vector2(1.56948, 1.62213)
-collision_mask = 5
 ControllerId = 1
 
 [node name="Player3" parent="." instance=ExtResource("6_ikia7")]
 position = Vector2(-898, 305)
 scale = Vector2(1.56948, 1.62213)
-collision_mask = 5
 ControllerId = 2
 
 [node name="WereWolf" parent="." instance=ExtResource("8_k7acu")]
 position = Vector2(746, -4)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 11
 script = ExtResource("9_5v1tr")
-ControllerId = 1
+ControllerId = 3
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-876, -488)

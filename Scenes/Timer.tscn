@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cx88ue00p22t2"]
 
 [ext_resource type="Script" uid="uid://crbkxxsh1b6cv" path="res://Scripts/Timer.cs" id="1_v5sty"]
-[ext_resource type="Texture2D" uid="uid://bwpiqil2rsfiy" path="res://Assets/redbar.jpg" id="2_v5sty"]
-[ext_resource type="Texture2D" uid="uid://bbb48gdraubsu" path="res://Assets/blue-blue-free-solidcolor-background.jpg" id="3_v5sty"]
+[ext_resource type="Texture2D" uid="uid://cgqyvkb5fjxn8" path="res://Assets/redbar.jpg" id="2_v5sty"]
+[ext_resource type="Texture2D" uid="uid://bhmx1wgc6iy67" path="res://Assets/blue-blue-free-solidcolor-background.jpg" id="3_v5sty"]
 
 [node name="Timer" type="Node2D"]
 process_mode = 3

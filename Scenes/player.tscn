@@ -1,8 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://drtnmxngoa0ao"]
+[gd_scene load_steps=12 format=3 uid="uid://dxo8cgjro1s4c"]
 
 [ext_resource type="Script" uid="uid://dhdu65w3hsy08" path="res://Scripts/Player.cs" id="1_gntrk"]
-[ext_resource type="Texture2D" uid="uid://dtal8sef5kg8d" path="res://Assets/white-removebg-preview.png" id="2_dx3a6"]
-[ext_resource type="Texture2D" uid="uid://b2fgyxyqj5ftj" path="res://Assets/Characters_V3_Colour.png" id="3_gntrk"]
+[ext_resource type="Texture2D" uid="uid://brdc0mqocw3h8" path="res://Assets/white-removebg-preview.png" id="2_dx3a6"]
+[ext_resource type="Texture2D" uid="uid://bf1yhv3mqp1ba" path="res://Assets/Characters_V3_Colour.png" id="3_gntrk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dewec"]
 atlas = ExtResource("3_gntrk")
@@ -70,6 +70,7 @@ height = 18.0
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
+collision_mask = 13
 script = ExtResource("1_gntrk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -99,7 +100,7 @@ position = Vector2(-4.76837e-07, 9.09495e-13)
 rotation = -1.5708
 scale = Vector2(0.0668929, 0.183827)
 collision_layer = 2
-collision_mask = 4
+collision_mask = 8
 
 [node name="CollisionShape2D2" type="CollisionPolygon2D" parent="Area2D"]
 position = Vector2(0.726304, 36.3587)

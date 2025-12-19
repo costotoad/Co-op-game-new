@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://lfig3lakv5hw"]
 
-[ext_resource type="Script" path="res://Scenes/Menu.cs" id="1_1rerr"]
-[ext_resource type="Texture2D" uid="uid://c85rfwj82o3iq" path="res://Assets/Highkey Trash Title Screen.png" id="2_xhh6f"]
-[ext_resource type="Texture2D" uid="uid://b3qhdi0g5utip" path="res://Assets/quitbutton.png" id="3_158mb"]
-[ext_resource type="Texture2D" uid="uid://7jfmdww6wo2o" path="res://Assets/startbutton.png" id="4_wwsa2"]
+[ext_resource type="Script" uid="uid://csnu33lixm2ms" path="res://Scripts/Menu.cs" id="1_1rerr"]
+[ext_resource type="Texture2D" uid="uid://gwf5sihxn2a5" path="res://Assets/Highkey Trash Title Screen.png" id="2_xhh6f"]
+[ext_resource type="Texture2D" uid="uid://c0qd2tjis0k86" path="res://Assets/quitbutton.png" id="3_158mb"]
+[ext_resource type="Texture2D" uid="uid://0q4s4y3l0mtr" path="res://Assets/startbutton.png" id="4_wwsa2"]
 
 [node name="Menu" type="CanvasLayer"]
 process_mode = 3

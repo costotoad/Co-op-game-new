@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://c1ticlkbjsb7i"]
+[gd_scene load_steps=5 format=3 uid="uid://b8at0skdemixg"]
 
 [ext_resource type="Script" uid="uid://bmjfn4yctgqdw" path="res://Scripts/Main.cs" id="1_hptm8"]
 [ext_resource type="PackedScene" uid="uid://bjy3eea6hs01a" path="res://Scenes/world.tscn" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://cx88ue00p22t2" path="res://Scenes/Timer.tscn" id="4_jjvhh"]
-[ext_resource type="AudioStream" uid="uid://c57l7kqcdxtq4" path="res://Assets/sounds-of-a-storm-with-wind-and-thunder-375923.mp3" id="8_ynf5e"]
+[ext_resource type="AudioStream" uid="uid://cfi3krnqtqfqo" path="res://Assets/sounds-of-a-storm-with-wind-and-thunder-375923.mp3" id="8_ynf5e"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_hptm8")
@@ -16,7 +16,7 @@ autoplay = true
 [node name="Viewports" type="GridContainer" parent="."]
 offset_right = 1028.0
 offset_bottom = 1028.0
-scale = Vector2(2.64733, 1.56715)
+scale = Vector2(1.87245, 1.04923)
 theme_override_constants/h_separation = 1
 theme_override_constants/v_separation = 1
 columns = 2
@@ -60,6 +60,6 @@ render_target_update_mode = 4
 [node name="World1" parent="Viewports/SubViewportContainer4/SubViewport" instance=ExtResource("3_8gbba")]
 playerID = 3
 
-[node name="HungerBar" parent="." instance=ExtResource("4_jjvhh")]
-position = Vector2(1405, 818)
+[node name="Timer" parent="." instance=ExtResource("4_jjvhh")]
+position = Vector2(974.611, 544.45)
 scale = Vector2(0.28426, 0.00960404)

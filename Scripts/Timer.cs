@@ -2,7 +2,7 @@ using Godot;
 
 public partial class Timer : Node2D
 {
-	private const float TOTAL_TIME = 120f;
+	private const float TOTAL_TIME = 60f;
 
 	private Godot.Timer countdown;
 	private TextureProgressBar bar;

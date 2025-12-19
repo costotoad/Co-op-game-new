@@ -1,10 +1,11 @@
-[gd_scene load_steps=39 format=3 uid="uid://byo72bhhqc2cm"]
+[gd_scene load_steps=42 format=3 uid="uid://byo72bhhqc2cm"]
 
-[ext_resource type="Texture2D" uid="uid://cf1aoyk3bssuy" path="res://Assets/pixil-frame-0 (3).png" id="1_ej3ap"]
-[ext_resource type="Texture2D" uid="uid://dsqi3kq8p2q1g" path="res://Assets/Back_walk.png" id="2_1epm0"]
-[ext_resource type="Texture2D" uid="uid://dg34aht74x414" path="res://Assets/front_walk.png" id="3_5osyv"]
-[ext_resource type="Texture2D" uid="uid://7cq3mljc2pj3" path="res://Assets/side_walk.png" id="4_7ak2q"]
-[ext_resource type="Texture2D" uid="uid://dgpgouax7knxj" path="res://Assets/Side face.png" id="5_fhhqw"]
+[ext_resource type="Texture2D" uid="uid://lq6w1pkagsel" path="res://Assets/pixil-frame-0 (3).png" id="1_ej3ap"]
+[ext_resource type="Texture2D" uid="uid://famhpocs4sty" path="res://Assets/Back_walk.png" id="2_1epm0"]
+[ext_resource type="Texture2D" uid="uid://dw5x8g4ywk1xb" path="res://Assets/front_walk.png" id="3_5osyv"]
+[ext_resource type="Texture2D" uid="uid://dmo71egekf7ea" path="res://Assets/side_walk.png" id="4_7ak2q"]
+[ext_resource type="Texture2D" uid="uid://14bk17mm018h" path="res://Assets/Side face.png" id="5_fhhqw"]
+[ext_resource type="Script" uid="uid://duldvd1xmxwm8" path="res://Scenes/DeathArea.cs" id="6_1epm0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u1bdw"]
 atlas = ExtResource("1_ej3ap")
@@ -253,9 +254,12 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ej3ap"]
+radius = 16.9743
+height = 36.0545
 
-
-
+[sub_resource type="CircleShape2D" id="CircleShape2D_ej3ap"]
+radius = 31.3209
 
 [node name="WereWolf" type="CharacterBody2D"]
 collision_layer = 8
@@ -265,3 +269,18 @@ collision_mask = 7
 sprite_frames = SubResource("SpriteFrames_736up")
 animation = &"Attack Foreward"
 frame_progress = 0.527548
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+scale = Vector2(0.765865, 1.27585)
+shape = SubResource("CapsuleShape2D_ej3ap")
+
+[node name="DeathArea" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 11
+script = ExtResource("6_1epm0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathArea"]
+shape = SubResource("CircleShape2D_ej3ap")
+
+[connection signal="body_entered" from="DeathArea" to="DeathArea" method="Die"]
